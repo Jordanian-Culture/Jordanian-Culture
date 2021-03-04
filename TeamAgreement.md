@@ -3,6 +3,7 @@
 
 ## Project Agreement 
 
+<br>
 
 
 ### Team members
@@ -14,39 +15,36 @@
 
 
 ### Conflict Plan
-* What is the group process to resolve conflict, when it arises?
-    - If we have any conflicts we will inform the Team Leader and resolve the conflict.
-* How will you raise concerns to members who are not adequately contributing?
-    - We will support each other and we will try to don’t have such things.
-* How and when will you escalate the conflict if your resolution attempts are unsuccessful?
-    - We will inform the TA.
+As a team we will maintain the relations between us as possible as we can, but you know may there be some conflicts in some stages, so we will first inform the Team-Leader about those conflicts, he will try to solve it. If this conflict can’t be solved or it can be described as a high level conflict, then we will inform the TA’s about this, and they will try to solve it. But as a team we will be supportive of each other and if there is any way to help each other and make the workflow as smooth as possible as we can.
 <br>
 
 ### Communication Plan
 
-* How will you communicate after hours and on the weekend?
-    - We will have a meeting from 7pm to 9pm.
-    - On the weekend we will work only in staudrady.
-* What is your strategy for ensuring everyone’s voice is heard?
-    - Everyone will share a free marshmallow from the Team Leader.
-* How will you ensure that you are creating a safe environment where everyone feels comfortable speaking up?
-    - By break the ice between the team members and have some funny activity there.
+As a team, we discussed the time that we want to work in, and this will be the as following:<br>
+* In the class time, we will attend the breakout room and try in this time to work as we can.<br>
+* After the class time, we will have a break so that we can refresh ourselves and back again with an energized soul that wants to make progress. We picked a two hours break then we will go back to work again.<br>
+* Friday will be an off-day for us, so that we can take some rest before we go back again to work.
+<br>
+
+We will ensure that everyone will share in this project and every voice will be heard, an as a Team-Leader I will ensure that everyone will take his piece of this work, and I will ensure to break the ice between the team members so that it turn from technical and work environment to a fun and enjoyable time.
+
 <br>
 
 ### Work Plan
-* How will you identify tasks, assign tasks, know when they are complete, and manage work in general?
-    - By using management tools available outside.
-* What project management tool will be used?
-    - GitHub.
+As a team we all agreed on the project idea, so that we all have the passion to do this project and we define the basic shape for our project, define the features and the head point of this project. We broke the ice between the team members and talked freely about the weakness and strength points in the coding. So, we assigned the tasks fearfully and everyone was satisfied with his taks and his piece of the work.
+<br>
+We will use the management tools that are available outside as GitHub projects and trello, we also define our progress plan and define some milestones that work as indicators that we are making progress in this project.
+
 
 ### Git Process
 
-* What components of your project will live on GitHub?
-    - The whole project.
-* How will you share the repository with your teammates?
-    - By doing an organization in the GitHub.
-* What is your Git flow?
-    - The Team Leader will do the merge for the files, and the team members will do their PR daily and after the Team Leader do the merg, they will pull the main in the next day.
+As a Git platform, we will use it as we can, it is a good friend for us, to monitor the versions of our files in the projects, make the remote collaboration something really good and effective.
+For this manner, we will do the following procedure:
+* Every team member will work on his task, after we finish we will do the PR one by one, and the Team-Leader will do the merge after he ensures there are no conflicts in the files.
+* Next day every team member will do the pull request in the morning for the main branch and do their tasks and so on.
+<br>
+
+This collaborative work will done by making an organization in the GitHub that has all the team members, in this organization we will have the project repository and on this repository we will do the above procedure.
 
 
 
