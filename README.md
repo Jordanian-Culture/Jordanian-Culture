@@ -1,36 +1,55 @@
-# Jordanian Culture 
-
-### The website talks about Jordanian culture and Jordanian traditions it will include about celebrations, food, hospitality habits, etc.
+# Jo Culture 
 
 <br>
 
-### The project will also include a funny quiz to test the knowledge of the meanings of Jordanian colloquial words. And maybe it will include another quiz to challenge popular proverbs as well.
+[Home](./README.md) 
+
+[TeamAgreement](./TeamAgreement.md)  
+
+[Requirements](./requirements.md)  
 
 <br>
 
-1- Home page :
-It will contain our  navbar , slide bar header , paragraphs about Jordan, and how And how the Jordanians adhere to their customs  , and links for our other pages  (photo and some introduction ) and when you press on it it will take you to this page .
+### We are a student form the LTUC-Abdul Aziz Al Ghurair School of Advanced Computing, we asked to build a website as a graduation project, so our website called Jo Culture.
 
 <br>
 
-2- Food page : it will contain some of Some traditional foods such as Mansaf and others .. It also includes the names of the most famous traditional restaurants in some governorates .
-<br>
+### The website talks about the Jordanian culture and traditions it will have four sections and those are:
 
-3- Clothes page : The page includes the different types of traditional clothes , such as  Bedouin and peasant dress .
-
-<br>
-
-4- Celebration page : about Celebration customs and some videos or pictures of dances and songs.
+- Food.
+- Clothes.
+- Celebration.
+- Tourist.
 
 <br>
 
-5- Tourist  page .
+### Our web site has seven pages as the following:
 
-<br>
+- Home Page.
+    - In the home page you will see the logo and a short brief about the Jordan and a short brief and navigation for the other pages.
+- Food Page.
+    - In this page we will have the most traditional dishes of the Jordanian culture.
+- Clothes Page.
+    - In this page we will have the traditional clothes of the Jordanian culture.
+- Celebration Page.
+    - In this page we will have the traditional celebrations of the Jordanian culture.
+- Tourist Page.
+    - In this page we will have the tourist places in the Jordan.
+- Quiz Page.
+    - In this page we will have a funny activity to introduce you to the Jordanian dialect
+- About Us page.
+    - In this page we will introduce the Project team.
 
-6- The page for a Quizzes challenge the Jordanian dialect and proverbs.
+### The Wireframes of this project are:
 
-<br>
+- This is for the Home Wireframe:
+    ![HomeWirframe](./assets/mdImg/HomeWirframe.png) <br>
 
-7- About us page .
+- This is for the other pages Wireframe:
+    ![OtherPageWirframe](./assets/mdImg/OtherPageWirframe.png) <br>
+
+### The User-Story
+
+fg
+
 
