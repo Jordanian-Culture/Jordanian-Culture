@@ -50,8 +50,6 @@
 
 ### The User-Story
 
-User Stories
-
 1 . As a user, I would like to display all subjects about jordan culture  the viewers can choose a favorite to read about .
 
 Feature Tasks:
@@ -89,3 +87,9 @@ Feature Tasks:
 ⦁ Display multiple images and animations .
 
 
+
+### Domain Modeling
+
+<br>
+
+![Domain Modeling](./assets/mdImg/DomainModeling.webp)
