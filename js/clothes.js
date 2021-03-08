@@ -13,7 +13,7 @@ function runder() {
   const parentElement = document.getElementById('newcontent');
 
   for (let i = 0; i < NewSection.all.length; i++) {
-    const h4Element = document.createElement('h4');
+    const h4Element = document.createElement('h2');
     parentElement.appendChild(h4Element);
     h4Element.textContent = `${NewSection.all[i].text}`;
     console.log(NewSection.all[i].text);
@@ -37,26 +37,26 @@ formElement.addEventListener('submit', function (event) {
 
 
   const nNewSectionTitle = event.target.title.value;
-  const nNewSectionText = event.target.subject.value;
+  const nNewSectionsubject = event.target.subject.value;
 
-  const nNewSection = new NewSection(nNewSectionTitle, nNewSectionText);
+  const nNewSectionclothes = new NewSection(nNewSectionTitle, nNewSectionsubject);
 
-  NewSection.all.push(nNewSection);
+  NewSection.all.push(nNewSectionclothes);
 
   console.log(NewSection.all);
 
   formElement.reset();
 
-  localStorage.setItem('nNewSection', JSON.stringify(NewSection.all));
+  localStorage.setItem('nNewSectionclothes', JSON.stringify(NewSection.all));
 
-  document.getElementById('AddingForm').innerHTML = "";
+  document.getElementById('newcontent').innerHTML = "";
 
   getData();
 
 });
 
 function getData() {
-  const data = localStorage.getItem('nNewSection');
+  const data = localStorage.getItem('nNewSectionclothes');
 
   if (data) {
     const objData = JSON.parse(data);
@@ -75,14 +75,15 @@ let images = [
   '../assets/indeximg/man4.jpg',
   '../assets/indeximg/man13.jpg',
   '../assets/indeximg/man14.jpg',
-  '../assets/indeximg/man1.jpg'
+  '../assets/indeximg/man1.jpg',
+  '../assets/indeximg/man4.jpg',
 
 ];
 
 setInterval(function () {
 
 
-  let random = Math.floor(Math.random() * 4);
+  let random = Math.floor(Math.random() * 5);
   image.src = images[random];
 }, 1500
 
@@ -114,9 +115,10 @@ let image3 = document.getElementById('women');
 let images3 = [
   '../assets/indeximg/women12.jpg',
   '../assets/indeximg/women1.jpg',
-  '../assets/indeximg/women8.jpg',
   '../assets/indeximg/women13.jpg',
-  '../assets/indeximg/women12.jpg',
+  '../assets/indeximg/women8.jpg',
+  
+  
 
 ];
 
