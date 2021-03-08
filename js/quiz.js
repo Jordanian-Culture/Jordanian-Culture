@@ -497,3 +497,5 @@ function score3Render(){
     score3Div3.innerHTML += "<p>"+ score3PerCent +"%</p>";
     score3Div3.innerHTML +=  '<button id="restart" onclick="again()" >Refresh</button>';
 }
+
+/////////////////////////////////////////////////
