@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@300&display=swap');
+
+
 * {
     box-sizing: border-box;
   }
@@ -8,6 +11,9 @@
       margin: auto;
     }
     
+
+    /*-------- header ----------------*/
+
 header{
    width: 100% ;
 }
@@ -100,9 +106,10 @@ display: block;
 outline: 0;
 white-space: normal;
 }
+/*-------- end og header ----------------*/
 
 
-
+/*-------- footer ----------------*/
 .footer{
     
     width: 100%;
@@ -340,27 +347,187 @@ white-space: normal;
     float: left;
     margin-bottom: 35px;
 }
-      
+ /*-------- end of footer ----------------*/
+
+ /*-------- main -----------------*/
+
+ 
+ .wrap{
+    margin-left:-15px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+  }
+
+
+  .box{
+    font-family:'Texturina',serif ;
+    font-size: larger;
+    font-weight: 600;
+    background-color:white; 
+    margin:25px 15px;
+    border-radius:5px;
+    width: 100%;
+    height: 239px;
+    line-height: 1.5;
+    padding: 0 24px;
+    padding-top: 40px;
+    
+  }
+
+  .dabkehbox {
+    font-family:'Texturina',serif ;
+    font-size: large;
+    font-weight: 600;
+    background-color:white; 
+    margin:25px 15px;
+    border-radius:5px;
+    width: 100%;
+    height: 350px;
+    padding: 0 24px;
+    padding-top: 50px;
+    line-height:1.1;
+    
+  }
+
+  .samerDancebox {
+    font-family:'Texturina',serif ;
+    font-size: large;
+    font-weight: 600;
+    background-color:white; 
+    margin:25px 15px;
+    border-radius:5px;
+    width: 100%;
+    height: 350px;
+    padding: 0 24px;
+    padding-top: 50px;
+    line-height: 1.5;
+    
+  }
+
+  .Al-Fardabox {
+    font-family:'Texturina',serif ;
+    font-size: large;
+    font-weight: 600;
+    background-color:white; 
+    margin:25px 15px;
+    border-radius:5px;
+    width: 100%;
+    height: 350px;
+    padding: 0 24px;
+    padding-top: 50px;
+    line-height: 1.4;
+    
+  }
+
+  .Foodfeastbox {
+    font-family:'Texturina',serif ;
+    font-size: large;
+    font-weight: 600;
+    background-color:white; 
+    margin:25px 15px;
+    border-radius:5px;
+    width: 100%;
+    height: 350px;
+    padding: 0 24px;
+    padding-top: 50px;
+    line-height: 1.5;
+    
+  }
+
+  
+   h4{
+
+    font-family: 'Texturina', sans-serif;
+    font-weight:bolder;
+    font-size:x-large;
+    line-height: normal;
+    color:rgb(12, 12, 12);
+
+    }
+
+    .boxs
+    {
+        background-color: #fbf0f0;
+    }
+
+    .boxd
+    {
+        background-color: #c2d2d8;
+    }
+
+.box1{
+    background-color: #9c3030;
+    }
+
+.shadow1{
+        position:relative;
+      }
+.shadow1{
+          box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+      }
+
+.shadow1:before, .shadow1:after{
+        position:absolute;
+        content:"";
+        bottom:12px;left:15px;top:80%;
+        width:45%;
+        background:#9B7468;
+        z-index:-1;
+        -webkit-box-shadow: 0 20px 15px #9B7468;
+        -moz-box-shadow: 0 20px 15px #9B7468;
+        box-shadow: 0 20px 15px #9B7468;
+        -webkit-transform: rotate(-6deg);
+        -moz-transform: rotate(-6deg);
+        transform: rotate(-6deg);
+      }
+.shadow1:after{
+        -webkit-transform: rotate(6deg);
+        -moz-transform: rotate(6deg);
+        transform: rotate(6deg);
+        right: 15px;left: auto;
+      }
+ .shadow2:before{
+        position:absolute;
+        content:"";
+        width:80%;
+        top:140px;bottom:15px;left:30px;
+        background-color:#9F8641;
+        z-index:-1;
+        -webkit-box-shadow:0 23px 17px 0 #9F8641;
+        -moz-box-shadow:0 23px 17px 0 #9F8641;
+        box-shadow: 0 23px 17px 0 #9F8641;
+        -webkit-transform:rotate(-4deg);
+        -moz-transform:rotate(-4deg);
+        transform:rotate(-4deg);
+      }
+
+
 
     .dabkeh
     {
         display: flex;
         margin-bottom: 30px;
         align-items: center;
+        font-family:'Texturina',serif ;
+        font-weight: 500;
         
     }
 
     #dabkaVideo
     {
-     margin-right: 10px;
+     margin-right: 25px;
      
     }
+    
 
     #samerDance
     {
         display: flex;
         margin-bottom: 30px; 
         align-items: center;
+        font-family:'Texturina',serif ;
+        font-weight: 500;
     }
 
     #samerDance-text
@@ -373,11 +540,13 @@ white-space: normal;
         display: flex;
         margin-bottom: 30px; 
         align-items: center; 
+        font-family:'Texturina',serif ;
+        font-weight: 500;
     }
 
     #Al-Farda-text
     {
-        margin-left: 10px;
+        margin-left: 25px;
     }
 
     
@@ -386,6 +555,8 @@ white-space: normal;
         display: flex;
         margin-bottom: 30px; 
         align-items: center; 
+        font-family:'Texturina',serif ;
+        font-weight: 500;
     }
 
     #Foodfeast-text
@@ -402,7 +573,8 @@ white-space: normal;
     
     .logoimgnav{
         float: left;
-        width: 50px;
+        width: 200px;
+        height: 45px;
     }
     
     .slideshow-item-text-head{
@@ -410,19 +582,20 @@ white-space: normal;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        background-color: rgb(0 0 0 / 61%);
+        background-color: rgb(0 0 0 / 80%);
         color: #fff;
         padding: 5.5rem 2.5rem;
         font-size: 50px;
         font-weight: 600;
-    }
-    
-
-    #intro
-    {
-        margin-top: 30px;
-        margin-bottom: 30px; 
+        padding-top: 35px;
+        padding-bottom: 35px;
+        padding-left: 25px;
+        padding-right: 15px;
         
     }
+
+   
+    
+
 
 

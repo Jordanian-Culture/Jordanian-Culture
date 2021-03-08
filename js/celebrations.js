@@ -1,8 +1,10 @@
 'use strict';
 
-function NewSection ( title, text ) {
+function NewSection ( title, text , path ) {
   this.title = title;
   this.text = text;
+  this.path = path;
+
 }
 
 NewSection.all=[];
@@ -20,7 +22,18 @@ function runder(){
     parentElement.appendChild( pElement );
     pElement.textContent=`${NewSection.all[i].title}`;
     console.log( NewSection.all[i].title );
+
+
+    const ImgElement = document.createElement( 'img' );
+    parentElement.appendChild( ImgElement );
+    ImgElement.setAttribute( 'style', 'width: 280px; height:475px;' );
+    ImgElement.src = `${NewSection.all[i].path}`;
+    console.log( NewSection.all[i].path );
+
+
   }
+
+
 
 }
 
@@ -32,8 +45,9 @@ formElement.addEventListener( 'submit', function( event ) {
 
   const nNewSectionTitle = event.target.Name.value;
   const nNewSectionText = event.target.description.value;
+  const nNewSectionImg = event.target.img.value;
 
-  const nNewSection = new NewSection( nNewSectionTitle, nNewSectionText );
+  const nNewSection = new NewSection( nNewSectionTitle, nNewSectionText , nNewSectionImg );
 
   NewSection.all.push( nNewSection );
 

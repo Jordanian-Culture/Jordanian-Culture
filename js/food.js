@@ -114,9 +114,10 @@ function randomNumber( min, max ) {
   return Math.floor( Math.random() * ( max - min + 1 ) ) + min;
 }
 
-function NewSection ( title, text ) {
+function NewSection ( title, text, path ) {
   this.title = title;
   this.text = text;
+  this.path = path;
 }
 
 NewSection.all=[];
@@ -127,13 +128,20 @@ function runder(){
   for ( let i =0; i < NewSection.all.length;i++ ){
     const h4Element = document.createElement( 'h4' );
     parentElement.appendChild( h4Element );
-    h4Element.textContent=`${NewSection.all[i].text}`;
-    console.log( NewSection.all[i].text );
+    h4Element.textContent=`${NewSection.all[i].titel}`;
+    console.log( NewSection.all[i].titel );
 
     const pElement = document.createElement( 'p' );
     parentElement.appendChild( pElement );
-    pElement.textContent=`${NewSection.all[i].title}`;
-    console.log( NewSection.all[i].title );
+    pElement.textContent=`${NewSection.all[i].text}`;
+    console.log( NewSection.all[i].text );
+
+    const ImgElement = document.createElement( 'img' );
+    parentElement.appendChild( ImgElement );
+    ImgElement.setAttribute( 'style', 'width: 280px; height:475px;' );
+    ImgElement.src = `${NewSection.all[i].path}`;
+    console.log( NewSection.all[i].path );
+
   }
 
 }
@@ -146,8 +154,9 @@ formElement.addEventListener( 'submit', function( event ) {
 
   const nNewSectionTitle = event.target.Name.value;
   const nNewSectionText = event.target.description.value;
+  const nNewSectionImg = event.target.img.value;
 
-  const nNewSection = new NewSection( nNewSectionTitle, nNewSectionText );
+  const nNewSection = new NewSection( nNewSectionTitle, nNewSectionText, nNewSectionImg );
 
   NewSection.all.push( nNewSection );
 
