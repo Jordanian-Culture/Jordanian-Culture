@@ -113,3 +113,64 @@ random6();
 function randomNumber( min, max ) {
   return Math.floor( Math.random() * ( max - min + 1 ) ) + min;
 }
+
+function NewSection ( title, text ) {
+  this.title = title;
+  this.text = text;
+}
+
+NewSection.all=[];
+
+function runder(){
+  const parentElement = document.getElementById( 'meal' );
+
+  for ( let i =0; i < NewSection.all.length;i++ ){
+    const h4Element = document.createElement( 'h4' );
+    parentElement.appendChild( h4Element );
+    h4Element.textContent=`${NewSection.all[i].text}`;
+    console.log( NewSection.all[i].text );
+
+    const pElement = document.createElement( 'p' );
+    parentElement.appendChild( pElement );
+    pElement.textContent=`${NewSection.all[i].title}`;
+    console.log( NewSection.all[i].title );
+  }
+
+}
+
+const formElement = document.getElementById( 'addFood' );
+
+formElement.addEventListener( 'submit', function( event ) {
+
+  event.preventDefault();
+
+  const nNewSectionTitle = event.target.Name.value;
+  const nNewSectionText = event.target.description.value;
+
+  const nNewSection = new NewSection( nNewSectionTitle, nNewSectionText );
+
+  NewSection.all.push( nNewSection );
+
+  console.log( NewSection.all );
+
+  formElement.reset();
+
+  localStorage.setItem( 'nNewSection', JSON.stringify( NewSection.all ) );
+
+  document.getElementById( 'meal' ).innerHTML = '';
+
+  getData();
+
+} );
+
+function getData() {
+  const data = localStorage.getItem( 'nNewSection' );
+
+  if ( data ) {
+    const objData = JSON.parse( data );
+    NewSection.all = objData;
+    runder();
+  }
+}
+
+getData();
