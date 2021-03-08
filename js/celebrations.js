@@ -41,7 +41,7 @@ formElement.addEventListener( 'submit', function( event ) {
 
   formElement.reset();
 
-  localStorage.setItem( 'nNewSection', JSON.stringify( NewSection.all ) );
+  localStorage.setItem( 'celebrationSection', JSON.stringify( NewSection.all ) );
 
   document.getElementById( 'celebration' ).innerHTML = '';
 
@@ -50,7 +50,7 @@ formElement.addEventListener( 'submit', function( event ) {
 } );
 
 function getData() {
-  const data = localStorage.getItem( 'nNewSection' );
+  const data = localStorage.getItem( 'celebrationSection' );
 
   if ( data ) {
     const objData = JSON.parse( data );
