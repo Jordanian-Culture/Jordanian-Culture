@@ -193,7 +193,6 @@ let div = ['petra', 'wadiRum', 'deadSea', 'roman', 'citadel'];
 function displayRandomImages( imageArray, div ) {
   //array of images with image location, height, and width
 
-  console.log( div );
 
   //find the length of the array of images
   let arrayLength = imageArray.length;
@@ -211,7 +210,7 @@ function displayRandomImages( imageArray, div ) {
     let imgNo;
     do {
       imgNo = Math.floor( Math.random() * ( max - min + 1 ) ) + min;
-    } while ( imgNo == lastImgNo );
+    } while ( imgNo === lastImgNo );
     lastImgNo = imgNo;
     return newArray[imgNo];
   }
@@ -225,12 +224,13 @@ function displayRandomImages( imageArray, div ) {
   images.src =`${newImage.src}`;
 
   setTimeout( displayRandomImages, 3000 );
-
+  console.log( setTimeout );
 
 }
 
 let lastImgNo = -99;
 // displayRandomImages();
+
 
 displayRandomImages( imageArrayPetra, div[0] );
 displayRandomImages( imageArrayWadiRum, div[1] );
@@ -334,7 +334,7 @@ formElement.addEventListener( 'submit', function ( event ) {
 
   formElement.reset();
 
-  localStorage.setItem( 'nNewSection', JSON.stringify( NewSection.all ) );
+  localStorage.setItem( 'NewPlace', JSON.stringify( NewSection.all ) );
 
   document.getElementById( 'newPlace' ).innerHTML = '';
 
@@ -343,7 +343,7 @@ formElement.addEventListener( 'submit', function ( event ) {
 } );
 
 function getData() {
-  const data = localStorage.getItem( 'nNewSection' );
+  const data = localStorage.getItem( 'NewPlace' );
 
   if ( data ) {
     const objData = JSON.parse( data );
