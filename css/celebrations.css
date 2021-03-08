@@ -4,9 +4,10 @@
 
   main
   {
-  width: 960px;
+      width: 960px;
       margin: auto;
     }
+    
 header{
    width: 100% ;
 }
@@ -407,11 +408,11 @@ white-space: normal;
     .slideshow-item-text-head{
         max-width: 50%;
         position: absolute;
-        top: 39%;
+        top: 50%;
         transform: translateY(-50%);
         background-color: rgb(0 0 0 / 61%);
         color: #fff;
-        padding: 7.5rem 15.5rem;
+        padding: 5.5rem 2.5rem;
         font-size: 50px;
         font-weight: 600;
     }
