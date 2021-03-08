@@ -704,3 +704,9 @@ margin-bottom: 10px;
 .fa-envelope:before {
     content: "\f0e0";
 }
+
+.footerp{
+    margin-top: 50px;
+    color: #f1e4cc;
+    text-align: start;
+}
