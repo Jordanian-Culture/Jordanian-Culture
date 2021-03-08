@@ -71,7 +71,7 @@ animation: zoom 30s infinite;
      position: absolute;
      top: 50%;
      transform: translateY(-50%);
-     background-color: rgb(0 0 0 / 75%);
+     background-color: rgb(0 0 0 / 85%);
      color: #fff;
      padding: 2rem 3rem;
 

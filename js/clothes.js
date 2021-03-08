@@ -1,8 +1,10 @@
 'use strict';
 
-function NewSection(title, text) {
+function NewSection(title, text, path) {
   this.title = title;
   this.text = text;
+  this.path = path;
+
 };
 
 NewSection.all = [];
@@ -15,13 +17,21 @@ function runder() {
   for (let i = 0; i < NewSection.all.length; i++) {
     const h4Element = document.createElement('h2');
     parentElement.appendChild(h4Element);
-    h4Element.textContent = `${NewSection.all[i].text}`;
+    h4Element.textContent = `${NewSection.all[i].title}`;
     console.log(NewSection.all[i].text);
 
     const pElement = document.createElement('p');
     parentElement.appendChild(pElement);
-    pElement.textContent = `${NewSection.all[i].title}`;
+    pElement.textContent = `${NewSection.all[i].text}`;
     console.log(NewSection.all[i].title);
+
+
+    const ImgElement = document.createElement('img');
+    parentElement.appendChild(ImgElement);
+    ImgElement.setAttribute('style', 'width: 280px; height:475px;');
+    ImgElement.src = `${NewSection.all[i].path}`;
+    console.log(NewSection.all[i].path);
+
   }
 
 }
@@ -38,8 +48,10 @@ formElement.addEventListener('submit', function (event) {
 
   const nNewSectionTitle = event.target.title.value;
   const nNewSectionsubject = event.target.subject.value;
+  const nNewSectionImg = event.target.img.value;
 
-  const nNewSectionclothes = new NewSection(nNewSectionTitle, nNewSectionsubject);
+
+  const nNewSectionclothes = new NewSection(nNewSectionTitle, nNewSectionsubject,nNewSectionImg);
 
   NewSection.all.push(nNewSectionclothes);
 
