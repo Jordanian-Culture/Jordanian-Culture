@@ -114,7 +114,7 @@ body {
 
 
 
-
+/* Quiz------------------------------ */
 
 #container{
     margin : 20px auto;
@@ -275,6 +275,309 @@ body {
     cursor: pointer;
     padding: 5px;
 }
+
+
+#container2{
+    margin : 20px auto;
+    background-color: white;
+    height: 300px;
+    width : 700px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+}
+#start2{
+    font-size: 1.5em;
+    font-weight: bolder;
+    word-break: break-all;
+    width:100px;
+    height:150px;
+    border : 2px solid lightgrey;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    left:300px;
+    top:50px;
+    color : lightgrey;
+}
+#start2:hover{
+    border: 3px solid lightseagreen;
+    color : lightseagreen;
+}
+
+#qImg2{
+    width : 200px;
+    height : 200px;
+    position: absolute;
+    left : 0px;
+    top : 0px;
+}
+#qImg2 img{
+    width : 200px;
+    height : 200px;
+    border-top-left-radius: 5px;
+}
+
+#question2{
+    width:500px;
+    height : 125px;
+    position: absolute;
+    right:0;
+    top:0;
+}
+#question2 p{
+    margin : 0;
+    padding : 15px;
+    font-size: 1.25em;
+}
+
+#choice2s2{
+    width: 480px;
+    position: absolute;
+    right: 0px;
+    top: 57px;
+    padding: 0 1px;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-rows: 1fr 1fr 1fr;
+    /* margin: 1px 0; */
+    gap: 12px;
+}
+.choice2{
+    display: inline-block;
+    width: 210px;
+    text-align: center;
+    border : 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    padding : 5px;
+}
+.choice2:hover{
+    border : 2px solid grey;
+    font-weight: bold;
+}
+
+#timer2{
+    position: absolute;
+    height : 100px;
+    width : 200px;
+    bottom : 0px;
+    text-align: center;
+}
+#count2er2{
+    font-size: 3em;
+}
+#btimeGauge2{
+    width : 150px;
+    height : 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin-left : 25px;
+}
+#timeGauge2{
+    height : 10px;
+    border-radius: 10px;
+    background-color: mediumseagreen;
+    margin-top : -10px;
+    margin-left : 25px;
+}
+#progress2{
+    width : 500px;
+    position: absolute;
+    bottom : 0px;
+    right : 0px;
+    padding:5px;
+    text-align: right;
+}
+.prog2{
+    width : 25px;
+    height : 25px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left : 5px;
+    margin-right : 5px;
+}
+#scorecontainer2{
+    margin : 20px auto;
+    background-color: white;
+    opacity: 0.8;
+    height: 300px;
+    width : 700px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+    display: none;
+}
+#scorecontainer2 img{
+    position: absolute;
+    top:100px;
+    left:325px;
+}
+#scorecontainer2 p{
+    position: absolute;
+    display: block;
+    width : 59px;
+    height :59px;
+    top:130px;
+    left:325px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+#container3{
+    margin : 20px auto;
+    background-color: white;
+    height: 300px;
+    width : 700px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+}
+#start3{
+    font-size: 1.5em;
+    font-weight: bolder;
+    word-break: break-all;
+    width:100px;
+    height:150px;
+    border : 2px solid lightgrey;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    left:300px;
+    top:50px;
+    color : lightgrey;
+}
+#start3:hover{
+    border: 3px solid lightseagreen;
+    color : lightseagreen;
+}
+
+#qImg3{
+    width : 200px;
+    height : 200px;
+    position: absolute;
+    left : 0px;
+    top : 0px;
+}
+#qImg3 img{
+    width : 200px;
+    height : 200px;
+    border-top-left-radius: 5px;
+}
+
+#question3{
+    width:500px;
+    height : 125px;
+    position: absolute;
+    right:0;
+    top:0;
+}
+#question3 p{
+    margin : 0;
+    padding : 15px;
+    font-size: 1.25em;
+}
+
+#choice3s3{
+    width: 480px;
+    position: absolute;
+    right: 0px;
+    top: 78px;
+    padding: 0 1px;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-rows: 1fr 1fr 1fr;
+    /* margin: 1px 0; */
+    gap: 12px;
+}
+.choice3{
+    display: inline-block;
+    width: 210px;
+    text-align: center;
+    border : 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    padding : 5px;
+}
+.choice3:hover{
+    border : 2px solid grey;
+    font-weight: bold;
+}
+
+#timer3{
+    position: absolute;
+    height : 100px;
+    width : 200px;
+    bottom : 0px;
+    text-align: center;
+}
+#count3er3{
+    font-size: 3em;
+}
+#btimeGauge3{
+    width : 150px;
+    height : 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin-left : 25px;
+}
+#timeGauge3{
+    height : 10px;
+    border-radius: 10px;
+    background-color: mediumseagreen;
+    margin-top : -10px;
+    margin-left : 25px;
+}
+#progress3{
+    width : 500px;
+    position: absolute;
+    bottom : 0px;
+    right : 0px;
+    padding:5px;
+    text-align: right;
+}
+.prog3{
+    width : 25px;
+    height : 25px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left : 5px;
+    margin-right : 5px;
+}
+#scorecontainer3{
+    margin : 20px auto;
+    background-color: white;
+    opacity: 0.8;
+    height: 300px;
+    width : 700px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+    display: none;
+}
+#scorecontainer3 img{
+    position: absolute;
+    top:100px;
+    left:325px;
+}
+#scorecontainer3 p{
+    position: absolute;
+    display: block;
+    width : 59px;
+    height :59px;
+    top:130px;
+    left:325px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Quiz------------------------------ */
+
 
 
 
