@@ -1,83 +1,83 @@
-'use strict';
+ 'use strict';
 
-function NewSection(title, text, path) {
-  this.title = title;
-  this.text = text;
-  this.path = path;
+// function NewSection(title, text, path) {
+//   this.title = title;
+//   this.text = text;
+//   this.path = path;
 
-};
+// };
 
-NewSection.all = [];
+// NewSection.all = [];
 
-function runder() {
-
-
-  const parentElement = document.getElementById('newcontent');
-
-  for (let i = 0; i < NewSection.all.length; i++) {
-    const h4Element = document.createElement('h2');
-    parentElement.appendChild(h4Element);
-    h4Element.textContent = `${NewSection.all[i].title}`;
-    console.log(NewSection.all[i].text);
-
-    const pElement = document.createElement('p');
-    parentElement.appendChild(pElement);
-    pElement.textContent = `${NewSection.all[i].text}`;
-    console.log(NewSection.all[i].title);
+// function runder() {
 
 
-    const ImgElement = document.createElement('img');
-    parentElement.appendChild(ImgElement);
-    ImgElement.setAttribute('style', 'width: 280px; height:475px;');
-    ImgElement.src = `${NewSection.all[i].path}`;
-    console.log(NewSection.all[i].path);
+//   const parentElement = document.getElementById('newcontent');
 
-  }
+//   for (let i = 0; i < NewSection.all.length; i++) {
+//     const h4Element = document.createElement('h2');
+//     parentElement.appendChild(h4Element);
+//     h4Element.textContent = `${NewSection.all[i].title}`;
+//     console.log(NewSection.all[i].text);
 
-}
-
-
-const formElement = document.getElementById('Adding-Form');
-
-formElement.addEventListener('submit', function (event) {
-
-  event.preventDefault();
-  console.log()
+//     const pElement = document.createElement('p');
+//     parentElement.appendChild(pElement);
+//     pElement.textContent = `${NewSection.all[i].text}`;
+//     console.log(NewSection.all[i].title);
 
 
+//     const ImgElement = document.createElement('img');
+//     parentElement.appendChild(ImgElement);
+//     ImgElement.setAttribute('style', 'width: 280px; height:475px;');
+//     ImgElement.src = `${NewSection.all[i].path}`;
+//     console.log(NewSection.all[i].path);
 
-  const nNewSectionTitle = event.target.title.value;
-  const nNewSectionsubject = event.target.subject.value;
-  const nNewSectionImg = event.target.img.value;
+//   }
+
+// }
 
 
-  const nNewSectionclothes = new NewSection(nNewSectionTitle, nNewSectionsubject,nNewSectionImg);
+// const formElement = document.getElementById('Adding-Form');
 
-  NewSection.all.push(nNewSectionclothes);
+// formElement.addEventListener('submit', function (event) {
 
-  console.log(NewSection.all);
+//   event.preventDefault();
+//   console.log()
 
-  formElement.reset();
 
-  localStorage.setItem('nNewSectionclothes', JSON.stringify(NewSection.all));
 
-  document.getElementById('newcontent').innerHTML = "";
+//   const nNewSectionTitle = event.target.title.value;
+//   const nNewSectionsubject = event.target.subject.value;
+//   const nNewSectionImg = event.target.img.value;
 
-  getData();
 
-});
+//   const nNewSectionclothes = new NewSection(nNewSectionTitle, nNewSectionsubject,nNewSectionImg);
 
-function getData() {
-  const data = localStorage.getItem('nNewSectionclothes');
+//   NewSection.all.push(nNewSectionclothes);
 
-  if (data) {
-    const objData = JSON.parse(data);
-    NewSection.all = objData;
-    runder();
-  }
-}
+//   console.log(NewSection.all);
 
-getData();
+//   formElement.reset();
+
+//   localStorage.setItem('nNewSectionclothes', JSON.stringify(NewSection.all));
+
+//   document.getElementById('newcontent').innerHTML = "";
+
+//   getData();
+
+// });
+
+// function getData() {
+//   const data = localStorage.getItem('nNewSectionclothes');
+
+//   if (data) {
+//     const objData = JSON.parse(data);
+//     NewSection.all = objData;
+//     runder();
+//   }
+// }
+
+// getData();
 
 // <------------------>
 
