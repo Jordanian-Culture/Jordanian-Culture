@@ -594,6 +594,7 @@ ol {
     box-sizing: border-box;
     margin-top: 0;
     margin-bottom: 10px;
+
 }
 
 .address .fa {
@@ -949,6 +950,7 @@ input[type=submit]:hover {
     font-size: 25px;
     font-family: monospace;
     color: chocolate;
+
 }
 
 .col-1-10 {
@@ -968,3 +970,4 @@ input[type=submit]:hover {
     float: right;
     color: rgb(194, 176, 176);
 }
+

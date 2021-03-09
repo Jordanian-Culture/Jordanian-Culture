@@ -112,161 +112,116 @@ b, strong {
     white-space: normal;
     font-weight: bold;
 }
+
+.anav:hover{
+  color: #da3e44;
+  transform: scale(1.2);
+}
 /*-------- end og header ----------------*/
 
 
 /*-------- footer ----------------*/
 .footer{
-    
+        
     width: 100%;
     margin-top: 30px;
     width: 100%;
     clear: both;
-    height: 400px;
+    height: 200px;
     background-color: #4a4442;
-    background-image: url(img/foot.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply;
-    padding: 30px;
-    line-height: 25px;
-}
-
-
-.grid {
- margin-top: 30px;
-position: relative;
-display: inline;
-clear: both;
-margin-bottom: 30px;
-}
-.col-1-3 {
-    width: 25.5%;
-    float: left;
-    margin-left: 75px;
+    
   }
 
+  
+  
   .logotit{
     font-family: Verdana,sans-serif;
-font-size: 15px;
-line-height: 1.5;
-letter-spacing: 4px;
-color: #FFF;
-    /* font-weight: 700; */
-    font-size: 30px;
-}
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: #FFF;
+    margin-left: 450px;
+    
 
-.logo {
+  }
+  .logo {
     color: #FFF;
     font-weight: 700;
-    font-size: 30px;
-}
+    font-size: 15px;
+    margin-left: 500px;
+  }
 
-.logoimg{
-    width: 120px;
-    margin-left: 30px;
+  .logoimg{
+    width: 70px;
     border-radius: 40%;
-}
+    margin-top: 30px;
+    margin-left: 650px;
+    padding-bottom: 0px;
+    
+  position: absolute;
+  left: 0px;
+  top: 2500px;
+  z-index: 1;
+    
+  }
 
 
-.menu{
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-font-size: 14px;
-line-height: 1.428571429;
-color: #333;
-font-family: 'Roboto', sans-serif;
-box-sizing: border-box;
-margin-top: 0;
-margin-bottom: 10px;
-}
 
-.address span, .menu span {
-    color: #FFF;
-    font-weight: bold;
-    border-bottom: 1px solid #c7c7c7;
-    padding: 10px 0px;
-    display: block;
-    text-transform: uppercase;
-    font-size: 16px;
-    letter-spacing: 3px;
-    font-family: emoji;
-}
-.address li, .menu li {
+  .address li, .menu li {
     margin: 20px 0px;
     list-style: none;
-}
-ul, ol {
-    margin-top: 0;
-    margin-bottom: 10px;
-    
-}
+  }
+ 
 
+  ul li {
 
-.a{
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    line-height: 1.428571429;
-    font-family: 'Roboto', sans-serif;
-    list-style: none;
-    box-sizing: border-box;
-    color: #FFF;
-    letter-spacing: 3px;
-    text-decoration: none;
-    font-size: 14px;}
-    .address{
-        -webkit-tap-highlight-color: rgba(0,0,0,0);
-    font-size: 14px;
-    line-height: 1.428571429;
-    color: #333;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    margin-top: 0;
-    margin-bottom: 10px;
-    }
-
-    .address .fa {
-        color: #da3e44;
-        margin-right: 10px;
-        font-size: 18px;
-    }
-    .fa {
-        display: inline-block;
-        font: normal normal normal 14px/1 FontAwesome;
-        font-size: inherit;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-    .fa-phone:before {
-        content: "\f095";
-    }
-    
-    .fa-map-marker:before {
-        content: "\f041";
-    }
-    
-    .fa-envelope:before {
-        content: "\f0e0";
-    }
-
-
-    .footerp{
-        margin-top: 50px;
-        color: #f1e4cc;
-        text-align: start;
-    }
-
-    .center{text-align: center;
     font-size: 18px;
-    color: gray;
-    font-family: emoji;}
+    font-weight: 600;
+    line-height: 20px;
+    color: #751f05;
+    margin-left: 500px;
+  }
+  
+  
+  .address .fa {
+    color: #da3e44;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .fa-phone:before {
+    content: "\f095";
+  }
+  
+  .fa-map-marker:before {
+    content: "\f041";
+  }
+  
+  .fa-envelope:before {
+    content: "\f0e0";
+  }
 
+  .footerp{
+      
+      color: #f3f3f3;
+      margin-left: 350px;
+      font-size: 20px;
+      margin-top: 50px;
+  
+  }
 
-    .col-1-2-2 {
-        width: 50%;
-        float: left;
-        margin-bottom: 35px;
-    }
+  
+       
  /*-------- end of footer ----------------*/
 
  /*-------- main -----------------*/
@@ -282,17 +237,27 @@ ul, ol {
 
   .box{
     font-family:'Texturina',serif ;
-    font-size: larger;
-    font-weight: 600;
+    font-size:larger;
+    font-weight: 500;
     background-color:white; 
     margin:25px 15px;
     border-radius:5px;
     width: 100%;
-    height: 239px;
+    height: 270px;
     line-height: 1.5;
     padding: 0 24px;
-    padding-top: 40px;
+    padding-top: 30px;
+    text-align: justify;
     
+  }
+
+  h5
+  {
+      font-weight: bold;
+    font-size: larger;
+    padding-top: -7px; 
+    padding-bottom: 20px; 
+    text-align:center;
   }
 
   .dabkehbox {
@@ -306,7 +271,7 @@ ul, ol {
     height: 350px;
     padding: 0 24px;
     padding-top: 50px;
-    line-height:1.1;
+    line-height:1.5;
     
   }
 
@@ -321,7 +286,7 @@ ul, ol {
     height: 350px;
     padding: 0 24px;
     padding-top: 50px;
-    line-height: 1.5;
+    line-height: 1.4;
     
   }
 
@@ -336,7 +301,7 @@ ul, ol {
     height: 350px;
     padding: 0 24px;
     padding-top: 50px;
-    line-height: 1.4;
+    line-height: 1.6;
     
   }
 
@@ -351,9 +316,27 @@ ul, ol {
     height: 350px;
     padding: 0 24px;
     padding-top: 50px;
-    line-height: 1.5;
+    line-height: 1.8;
     
   }
+
+  /*
+  .newbox
+  {
+    display:none;
+    font-family:'Texturina',serif ;
+    font-size: large;
+    font-weight: 600;
+    background-color:white; 
+    margin:25px 15px;
+    border-radius:5px;
+    width: 100%;
+    height: 350px;
+    padding: 0 24px;
+    padding-top: 50px;
+    line-height: 1.5; 
+
+  }*/
 
   
    h4{
@@ -363,7 +346,8 @@ ul, ol {
     font-size:x-large;
     line-height: normal;
     color:rgb(12, 12, 12);
-
+    padding-bottom: 14px;
+    
     }
 
     .boxs
@@ -422,6 +406,15 @@ ul, ol {
         transform:rotate(-4deg);
       }
 
+     /* .newCelebrationContent
+      {
+        display: flex;
+        margin-bottom: 30px;
+        align-items: center;
+        font-family:'Texturina',serif ;
+        font-weight: 500;
+        text-align: justify;
+      }*/
 
 
     .dabkeh
@@ -431,6 +424,7 @@ ul, ol {
         align-items: center;
         font-family:'Texturina',serif ;
         font-weight: 500;
+        text-align: justify;
         
     }
 
@@ -439,7 +433,11 @@ ul, ol {
      margin-right: 25px;
      
     }
-    
+    #Dabke-text h4 
+    {
+      padding-bottom: 10px;
+    }
+
 
     #samerDance
     {
@@ -448,11 +446,12 @@ ul, ol {
         align-items: center;
         font-family:'Texturina',serif ;
         font-weight: 500;
+        text-align: justify;
     }
 
     #samerDance-text
     {
-        margin-right: 10px;
+        margin-right: 20px;
     }
 
     #Al-Farda
@@ -462,11 +461,17 @@ ul, ol {
         align-items: center; 
         font-family:'Texturina',serif ;
         font-weight: 500;
+        text-align: justify;
     }
 
     #Al-Farda-text
     {
         margin-left: 25px;
+    }
+
+    #Al-Farda-text h4 
+    {
+      padding-bottom: 9px;
     }
 
     
@@ -477,17 +482,19 @@ ul, ol {
         align-items: center; 
         font-family:'Texturina',serif ;
         font-weight: 500;
+        text-align: justify;
     }
 
     #Foodfeast-text
     {
-        margin-right: 10px;
+        margin-right: 20px;
+        
     }
 
     .celeHed{
         width: 100%;
         height: 450px;
-        box-shadow: 10px 13px #d6cfcf;
+        
     }
     
     
@@ -502,7 +509,7 @@ ul, ol {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        background-color: rgb(0 0 0 / 88%);
+        background-color: rgb(0 0 0 / 90%);
         color: #fff;
         padding: 5.5rem 2.5rem;
         font-size: 50px;
@@ -511,8 +518,11 @@ ul, ol {
         padding-bottom: 35px;
         padding-left: 25px;
         padding-right: 15px;
+        font-family:'Texturina',serif ;
         
     }
+
+
 
    
     
