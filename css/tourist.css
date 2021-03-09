@@ -975,11 +975,22 @@ box-sizing: border-box;
     text-align: justify;
     font-family: 'Texturina','serif';
     margin-bottom: 30px;
+    filter:contrast(110%);
 
   }
 
   .grid-container img {
     box-shadow: 10px 10px 10px #808080;
+  }
+
+  .grid-container img{
+    filter:contrast(130%);
+
+  }
+
+  .clotheshed{
+    filter:contrast(110%);
+
   }
 
 
