@@ -509,6 +509,8 @@ color: #FFF;
 letter-spacing: 3px;
 text-decoration: none;
 font-size: 14px;}
+
+
 .address{
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 font-size: 14px;
@@ -841,4 +843,9 @@ button{
     font-size: 25px;
     font-family: monospace;
     color: chocolate;
+  }
+
+
+  .grid-container {
+    display: grid;
   }
