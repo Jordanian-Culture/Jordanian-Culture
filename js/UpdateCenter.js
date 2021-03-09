@@ -125,8 +125,7 @@ function NewClothesSection(title, text, path) {
     formElementClothes.reset();
    
     localStorage.setItem('nNewClothesSection', JSON.stringify(NewClothesSection.all));
-   
-    document.getElementById('newClothesContent').innerHTML = "";
+    
    
     getData();
    
