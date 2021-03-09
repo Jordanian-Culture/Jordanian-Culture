@@ -1,13 +1,13 @@
  'use strict';
 
-// function NewSection(title, text, path) {
-//   this.title = title;
-//   this.text = text;
-//   this.path = path;
+function NewSection(title, text, path) {
+  this.title = title;
+  this.text = text;
+  this.path = path;
 
-// };
+};
 
-// NewSection.all = [];
+NewSection.all = [];
 
 // function runder() {
 
@@ -74,6 +74,7 @@
 //     const objData = JSON.parse(data);
 //     NewSection.all = objData;
 //     runder();
+//     document.getElementById('newcontent').style.display = 'block'
 //   }
 // }
 
