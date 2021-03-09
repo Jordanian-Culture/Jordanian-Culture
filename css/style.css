@@ -839,3 +839,8 @@ button{
     font-family: monospace;
     color: chocolate;
   }
+
+
+  .grid-container {
+    display: grid;
+  }
