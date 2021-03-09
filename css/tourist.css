@@ -975,6 +975,7 @@ box-sizing: border-box;
     text-align: justify;
     font-family: 'Texturina','serif';
     margin-bottom: 30px;
+    filter:contrast(110%);
 
   }
 
