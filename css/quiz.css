@@ -19,10 +19,15 @@ main{
 
 * p {
     font-family: 'Texturina', serif;
+    padding: 9px 0px;
+    text-align: justify;
 }
 
 * ul {
     font-family: 'Texturina', serif;
+    list-style: unset;
+    padding: 0 38px;
+}
 }
 
 header{
@@ -183,9 +188,12 @@ body {
 
 /* background---------------------------------------------------------------------*/
 
-
-
-
+.quizPart {
+    clear: both;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
 
 
 
@@ -230,7 +238,13 @@ body {
 
 @import url(https://fonts.googleapis.com/css?family=Righteous);
 
-
+h2{
+    margin: 0 373px;
+    font-size: 24px;
+    font-weight: 700;
+    /* padding: 0 0; */
+    width: 100%;
+}
 
 h3 {
   display: inline-block;
@@ -242,7 +256,7 @@ h3 {
   h3:after {
     content: attr(data-shadow);
     position: absolute;
-    top: 5.8rem;
+    top: 2.8rem;
     left: 6rem;
     z-index: -1;
     text-shadow: none;
@@ -273,7 +287,7 @@ h3 {
   .box{
     float:left;
     background-color:white; 
-    margin:25px 15px;
+    margin: 25px 0px;
     border-radius:5px;
     width: 100%;
     height: 400px;
@@ -288,7 +302,8 @@ h3 {
     color:#fff;
   }
 .box1{
-    background-color: #b4aef7}
+    background-color: #ffffff;;
+    padding: 23px 25px;}
 
     .shadow1{
         position:relative;
@@ -343,6 +358,8 @@ h3 {
     width: 100%;
     height: 450px;
     /*box-shadow: 10px 13px #d6cfcf;*/
+    background-image: url(https://wallpapercave.com/wp/wp2003603.jpg);
+    background-size: cover;
 }
 
 
@@ -358,8 +375,8 @@ h3 {
     transform: translateY(-50%);
     background-color: rgb(0 0 0 / 61%);
     color: #fff;
-    padding: 5.5rem 6.5rem;
-    font-size: 50px;
+    padding: 2.5rem 6.5rem;
+    font-size: 32px;
     font-weight: 600;
 }
 
@@ -369,13 +386,15 @@ h3 {
 
 #container{
     margin : 50px auto;
-    /*background-color: white;*/
+    background-color: #ffffffad;
     height: 300px;
-    width : 700px;
-    border-radius: 5px;
+    width: 100%;
+    border-radius: 16px;
     box-shadow: 0px 5px 15px 0px;
     position: relative;
 }
+
+
 #start{
     font-size: 1.5em;
     font-weight: bolder;
@@ -385,7 +404,7 @@ h3 {
     text-align: center;
     cursor: pointer;
     position: absolute;
-    left: 248px;
+    left: 39%;
     top: 92px;
     color: #4a4a4a;
     padding: 8px 0;
@@ -402,6 +421,7 @@ h3 {
     position: absolute;
     left : 0px;
     top : 0px;
+    margin: 6px 108px;
 }
 #qImg img{
     width : 200px;
@@ -457,6 +477,7 @@ h3 {
     width : 200px;
     bottom : 0px;
     text-align: center;
+    margin:-12px 108px;
 }
 #counter{
     font-size: 3em;
@@ -502,12 +523,13 @@ h3 {
     box-shadow: 0px 5px 15px 0px;
     position: relative;
     display: none;
+    width: 100%;
 
 }
 #scoreContainer img{
     position: absolute;
     top:100px;
-    left:325px;
+    left:50%;
 }
 #scoreContainer p{
     position: absolute;
@@ -515,7 +537,7 @@ h3 {
     width : 59px;
     height :59px;
     top:130px;
-    left:325px;
+    left:50%;
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
@@ -524,7 +546,7 @@ h3 {
 #restart{
     top: 205px;
     position: absolute;
-    left: 278px;
+    left: 45%;
     width: 143px;
     text-align: center;
     border: 1px solid grey;
@@ -538,8 +560,8 @@ h3 {
     margin : 50px auto;
     background-color: white;
     height: 300px;
-    width : 700px;
-    border-radius: 5px;
+    width: 100%;
+    border-radius: 16px;
     box-shadow: 0px 5px 15px 0px;
     position: relative;
 }
@@ -548,14 +570,14 @@ h3 {
     font-weight: bolder;
     word-break: break-all;
     height: 71px;
-    border: 2px solid lightgrey;
+    border: 2px solid #555555;
     text-align: center;
     cursor: pointer;
     position: absolute;
-    left: 248px;
+    left: 39%;
     top: 92px;
-    color: lightgrey;
-    padding: 0 -24px;
+    color: #4a4a4a;
+    padding: 8px 0;
     width: 194px;
 }
 #start2:hover{
@@ -569,6 +591,7 @@ h3 {
     position: absolute;
     left : 0px;
     top : 0px;
+    margin: 6px 108px;
 }
 #qImg2 img{
     width : 200px;
@@ -622,6 +645,7 @@ h3 {
     width : 200px;
     bottom : 0px;
     text-align: center;
+    margin: -12px 108px;
 }
 #count2er2{
     font-size: 3em;
@@ -662,24 +686,25 @@ h3 {
     background-color: white;
     opacity: 0.8;
     height: 300px;
-    width : 700px;
+    width : 100%;
     border-radius: 5px;
     box-shadow: 0px 5px 15px 0px;
     position: relative;
     display: none;
+    width: 100%;
 }
 #scorecontainer2 img{
     position: absolute;
     top:100px;
-    left:325px;
+    left:50%;
 }
 #scorecontainer2 p{
     position: absolute;
     display: block;
     width : 59px;
     height :59px;
-    top:130px;
-    left:325px;
+    top:148px;;
+    left:50%;
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
@@ -690,8 +715,8 @@ h3 {
     margin : 50px auto;
     background-color: white;
     height: 300px;
-    width : 700px;
-    border-radius: 5px;
+    width: 100%;
+    border-radius: 16px;
     box-shadow: 0px 5px 15px 0px;
     position: relative;
 }
@@ -700,14 +725,14 @@ h3 {
     font-weight: bolder;
     word-break: break-all;
     height: 71px;
-    border: 2px solid lightgrey;
+    border: 2px solid #555555;
     text-align: center;
     cursor: pointer;
     position: absolute;
-    left: 248px;
+    left: 39%;
     top: 92px;
-    color: lightgrey;
-    padding: 0 -24px;
+    color: #4a4a4a;
+    padding: 8px 0;
     width: 194px;
 }
 #start3:hover{
@@ -721,6 +746,7 @@ h3 {
     position: absolute;
     left : 0px;
     top : 0px;
+    margin: 6px 108px;
 }
 #qImg3 img{
     width : 200px;
@@ -773,6 +799,7 @@ h3 {
     width : 200px;
     bottom : 0px;
     text-align: center;
+    margin: -12px 108px;
 }
 #count3er3{
     font-size: 3em;
@@ -813,7 +840,7 @@ h3 {
     background-color: white;
     opacity: 0.8;
     height: 300px;
-    width : 700px;
+    width : 100%;
     border-radius: 5px;
     box-shadow: 0px 5px 15px 0px;
     position: relative;
@@ -822,15 +849,15 @@ h3 {
 #scorecontainer3 img{
     position: absolute;
     top:100px;
-    left:325px;
+    left:50%;
 }
 #scorecontainer3 p{
     position: absolute;
     display: block;
     width : 59px;
     height :59px;
-    top:130px;
-    left:325px;
+    top:148px;;
+    left: 50%;
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
