@@ -103,7 +103,7 @@ body {
     }
 
     .anav {
-        font-family: Verdana,sans-serif;
+        font-family: 'Texturina', serif;
         font-size: 15px;
         line-height: 1.5;
         letter-spacing: 4px;
@@ -124,6 +124,10 @@ body {
         outline: 0;
         white-space: normal;
     }
+    .anav:hover{
+        color: #da3e44;
+        transform: scale(1.2);
+    }
 
 /* header------------------------------ */
 
@@ -135,7 +139,7 @@ body {
   color:#000000;
   text-decoration:none;
   font-size:20px;
-  font-family:sans-serif;
+  font-family: 'Texturina', serif;
   /*letter-spacing:10px;
   text-transform:uppercase;*/
   z-index: 1;
@@ -232,24 +236,143 @@ body {
 
 /* background--------------------------------------------------------------------------*/
 
+.containerx {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 1vw auto;
+    position: relative;
+    text-align: center;
+    width: 94vw;
+  }
+  
+  .productx {
+    width: 150px;
+    height: 178px;
+    /* margin: 0px 410px; */
+    /* padding: 0 0; */
+    position: relative;
+    margin: -37px 24px;
+  }
+  
+  .productx:before {
+    content: "";
+    float: left;
+    padding-top: 100%;
+  }
+  
+  .contentx {
+    background-image: url(https://wallpaperaccess.com/full/1732235.jpg);
+    border-radius: 30%;
+    height: 150px;
+    margin: 8%;
+    position: absolute;
+    width: 150px;
+    vertical-align: middle;
+    z-index: 5000;
+    /*margin: 76px 10px;*/
+  }
+  
+  .productx:hover .effect-1,
+  .productx:hover .effect-2 {
+    display: block;
+  }
+  
+  .effect-1,
+  .effect-2 {
+    border-radius: 30%;
+    display: none;
+    mix-blend-mode: multiply;
+    height: 150px;
+    opacity: 1;
+    position: absolute;
+    width: 150px;
+    z-index: 3000;
+    /*margin: 51px -2px;*/
+  }
+  
+  .effect-1 {
+    animation: rotate 1.8s linear infinite;
+    background: cyan;
+  }
+  
+  .effect-2 {
+    animation: rotate 1.2s linear reverse infinite;
+    background: #e7a9ff;
+  }
+  
+  @keyframes rotate {
+    0% {
+      top: 0;
+      left: 8%;
+    }
+    25% {
+      top: 8%;
+      left: 0%;
+    }
+    50% {
+      top: 16%;
+      left: 8%;
+    }
+    75% {
+      top: 8%;
+      left: 16%;
+    }
+    100% {
+      top: 0;
+      left: 8%;
+    }
+  }
+  
+  .titlex {
+    font-size: 26px;
+    width: 150px;
+    height: 150px;
+    margin: 34px 45px;
+    top: 16%;
+    right: -38%;
+    color: hsl(0deg 15% 28%);
+    z-index: 10000;
+    position: absolute;
+    font-family: 'Texturina', serif;
+  }
+  
+  .titlex span {
+    display: block;
+    font-family: 'Texturina', serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+    margin-top: 8px;
+    text-transform: uppercase;
+  }
+  
 
 /* test------------------------------ */
 
 
 @import url(https://fonts.googleapis.com/css?family=Righteous);
 
+.quizH2 {
+    font-family: 'Texturina', serif;
+    margin-left: 352px;
+    font-size: 45px;
+}
+
+
+
 h2{
-    margin: 0 373px;
-    font-size: 24px;
+    margin: 0 264px;
+    font-size: 56px;
     font-weight: 700;
     /* padding: 0 0; */
     width: 100%;
+    font-family: 'Texturina', serif;
 }
 
 h3 {
   display: inline-block;
   color: white;
-  font-family: 'Righteous', serif;
+  font-family: 'Texturina', serif;
   font-size: 2em; 
   text-shadow: .03em .03em 0 hsla(230,40%,50%,1);
   }
@@ -290,12 +413,12 @@ h3 {
     margin: 25px 0px;
     border-radius:5px;
     width: 100%;
-    height: 400px;
+    height: 471px;;
     line-height: 1.5;
     padding: 0 24px;
   }
   .box h3{
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Texturina', serif;
     font-weight:normal;
     text-align:center;
     padding-top:60px;
@@ -400,7 +523,7 @@ h3 {
     font-weight: bolder;
     word-break: break-all;
     height: 71px;
-    border: 2px solid #555555;
+    /*border: 2px solid #555555;*/
     text-align: center;
     cursor: pointer;
     position: absolute;
@@ -411,7 +534,7 @@ h3 {
     width: 194px;
 }
 #start:hover{
-    border: 3px solid lightseagreen;
+    /*border: 3px solid lightseagreen;*/
     color : lightseagreen;
 }
 
@@ -570,7 +693,7 @@ h3 {
     font-weight: bolder;
     word-break: break-all;
     height: 71px;
-    border: 2px solid #555555;
+    /*border: 2px solid #555555;*/
     text-align: center;
     cursor: pointer;
     position: absolute;
@@ -581,7 +704,7 @@ h3 {
     width: 194px;
 }
 #start2:hover{
-    border: 3px solid lightseagreen;
+    /*border: 3px solid lightseagreen;*/
     color : lightseagreen;
 }
 
@@ -725,7 +848,7 @@ h3 {
     font-weight: bolder;
     word-break: break-all;
     height: 71px;
-    border: 2px solid #555555;
+    /*border: 2px solid #555555;*/
     text-align: center;
     cursor: pointer;
     position: absolute;
@@ -736,7 +859,7 @@ h3 {
     width: 194px;
 }
 #start3:hover{
-    border: 3px solid lightseagreen;
+    /*border: 3px solid lightseagreen;*/
     color : lightseagreen;
 }
 
@@ -900,7 +1023,7 @@ margin-bottom: 30px;
     float: left;
 }
 .logotit{
-    font-family: Verdana,sans-serif;
+    font-family: 'Texturina', serif;
     font-size: 15px;
     line-height: 1.5;
     letter-spacing: 4px;
@@ -928,7 +1051,7 @@ margin-bottom: 30px;
     font-size: 14px;
     line-height: 1.428571429;
     color: #333;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Texturina', serif;
     box-sizing: border-box;
     margin-top: 0;
     margin-bottom: 10px;
@@ -962,7 +1085,7 @@ margin-bottom: 30px;
 .a{
 -webkit-tap-highlight-color: rgba(0,0,0,0);
 line-height: 1.428571429;
-font-family: 'Roboto', sans-serif;
+font-family: 'Texturina', serif;
 list-style: none;
 box-sizing: border-box;
 color: #FFF;

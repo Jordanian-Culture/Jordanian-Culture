@@ -589,3 +589,57 @@ function getRandomNo( min, max, lastNo ) {
   } while ( n === lastNo );
   return n;
 }
+
+
+
+
+
+
+// PLace Form
+
+
+function NewPLaceSection(title, text, path) {
+  this.title = title;
+  this.text = text;
+  this.path = path;
+};
+ 
+NewPLaceSection.all = [];
+ 
+function runderPLace() {
+ 
+ 
+  const parentElement = document.getElementById('newPLaceContent');
+ 
+  for (let i = 0; i < NewPLaceSection.all.length; i++) {
+    const h4Element = document.createElement('h4');
+    parentElement.appendChild(h4Element);
+    h4Element.textContent = `${NewPLaceSection.all[i].title}`;
+    console.log(NewPLaceSection.all[i].title);
+ 
+    const pElement = document.createElement('p');
+    parentElement.appendChild(pElement);
+    pElement.textContent = `${NewPLaceSection.all[i].text}`;
+    console.log(NewPLaceSection.all[i].text);
+ 
+    const ImgElement = document.createElement('img');
+    parentElement.appendChild(ImgElement);
+    ImgElement.setAttribute('style', 'width: 280px; height:475px;');
+    ImgElement.src = `${NewPLaceSection.all[i].path}`;
+    console.log(NewPLaceSection.all[i].path);
+  }
+ 
+}
+
+function getData() {
+
+  const dataPlace = localStorage.getItem('nNewPLaceSection');
+  
+  if (dataPlace) {
+    const objDataPlace = JSON.parse(dataPlace);
+    NewPLaceSection.all = objDataPlace;
+    runderPLace();
+  }
+}
+
+getData();
