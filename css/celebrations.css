@@ -112,6 +112,11 @@ b, strong {
     white-space: normal;
     font-weight: bold;
 }
+
+.anav:hover{
+  color: #da3e44;
+  transform: scale(1.2);
+}
 /*-------- end og header ----------------*/
 
 
@@ -513,6 +518,7 @@ b, strong {
         padding-bottom: 35px;
         padding-left: 25px;
         padding-right: 15px;
+        font-family:'Texturina',serif ;
         
     }
 
