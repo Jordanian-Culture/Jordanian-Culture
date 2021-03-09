@@ -1,9 +1,11 @@
 * {
     box-sizing: border-box;
-  }
-header{
-   width: 100% ;
 }
+
+header {
+    width: 100%;
+}
+
 body {
     width: 100%;
     overflow-x: hidden;
@@ -13,149 +15,137 @@ body {
     linear-gradient(to bottom, transparent, rgba(#fff, 0.4) 70%),
     #1e90ff;  
 animation: bg 30s infinite; */
- }
+}
 
- .logoimgnav{
+.logoimgnav {
     float: left;
     width: 200px;
     height: 45px;
 }
- 
 
- .slideshow{
-     width: 100%;
-     height: 90vh;
-     position: relative;
-     overflow: hidden;
- }
+.slideshow {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+}
 
- .slideshow-item{
-     width: inherit;
-     height: inherit;
-     position:absolute;
-     opacity: 0;
-     animation: cycleImages 30s infinite;
- }
+.slideshow-item {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    opacity: 0;
+    animation: cycleImages 30s infinite;
+}
 
- 
- .slideshow-item img {
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
-animation: zoom 30s infinite;
- }
+.slideshow-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: zoom 30s infinite;
+}
 
-
-
- .slideshow-item:nth-child(1),.slideshow-item:nth-child(1) img{
+.slideshow-item:nth-child(1),
+.slideshow-item:nth-child(1) img {
     animation-delay: 0s;
-  }
- 
-  .slideshow-item:nth-child(2),.slideshow-item:nth-child(2) img{
-      animation-delay: 5s;
- }
- 
- .slideshow-item:nth-child(3),.slideshow-item:nth-child(3) img{
-      animation-delay: 10s;
- }
- 
- .slideshow-item:nth-child(4),.slideshow-item:nth-child(4) img{
-      animation-delay: 15s;
- }
- 
+}
 
+.slideshow-item:nth-child(2),
+.slideshow-item:nth-child(2) img {
+    animation-delay: 5s;
+}
 
+.slideshow-item:nth-child(3),
+.slideshow-item:nth-child(3) img {
+    animation-delay: 10s;
+}
 
- .slideshow-item-text{
-     max-width: 50%;
-     position: absolute;
-     top: 50%;
-     transform: translateY(-50%);
-     background-color: rgb(0 0 0 / 85%);
-     color: #fff;
-     padding: 2rem 3rem;
+.slideshow-item:nth-child(4),
+.slideshow-item:nth-child(4) img {
+    animation-delay: 15s;
+}
 
- }
+.slideshow-item-text {
+    max-width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(0 0 0 / 85%);
+    color: #fff;
+    padding: 2rem 3rem;
+}
 
- .slideshow-item-text h3{
+.slideshow-item-text h3 {
     font-size: 4rem;
-    font-family: 'Raleway',sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 2.5rem;
     font-weight: 800;
     font-family: sans-serif;
     margin-top: 10px;
- }
+}
 
- .slideshow-item-text p {
+.slideshow-item-text p {
     font-size: 1rem;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
-    font-weight: 300; 
+    font-weight: 300;
     line-height: 30px;
 }
 
 @keyframes cycleImages {
- 25%{
-opacity: 1;
- }
-
- 40%{
-opacity: .8;
- }
-
-
+    25% {
+        opacity: 1;
+    }
+    40% {
+        opacity: .8;
+    }
 }
 
-
-@keyframes zoom{
-    100%{
+@keyframes zoom {
+    100% {
         transform: scale(1.2);
     }
 }
 
-/* to make it responsive */
-@media screen and (max-width: 767 px){
 
-    .slideshow-item-text{
+/* to make it responsive */
+
+@media screen and (max-width: 767 px) {
+    .slideshow-item-text {
         max-width: 70%;
         padding: .7rem 1rem;
         top: initial;
         transform: initial;
         bottom: 0px;
-   
     }
-   
-    .slideshow-item-text h3{
+    .slideshow-item-text h3 {
         font-size: 2rem;
     }
-   
-    .slideshow-item-text p{
+    .slideshow-item-text p {
         font-size: .8rem;
     }
-
 }
 
-main{
+main {
     width: 1000px;
     display: block;
     margin: auto;
 }
 
 
-
 /* main */
+
 .m1 {
     margin-top: 30px;
     display: flex;
-    align-items: center; 
-     clear: both;
+    align-items: center;
+    clear: both;
     position: relative;
-  
 }
 
-.container{
+.container {
     position: relative;
     width: 100%;
     display: flex;
@@ -178,17 +168,17 @@ main{
     transition: .3s ease-in-out;
 }
 
-.container .card:hover{
+.container .card:hover {
     height: 420px;
 }
+
 .container .card .imgBx {
     position: relative;
     width: 260px;
-    top:-60px;
+    top: -60px;
     left: 20px;
     box-shadow: 0 5px 30px rgb(2, 70, 22);
     z-index: 1;
-
 }
 
 .container .card .imgBx img {
@@ -197,8 +187,7 @@ main{
     height: 200px;
 }
 
-.container .card .content{
-
+.container .card .content {
     position: relative;
     margin-top: -140px;
     padding: 10px 15px;
@@ -209,148 +198,159 @@ main{
     transition: .3s ease-in-out;
 }
 
-.container .card:hover .content{
+.container .card:hover .content {
     visibility: visible;
     opacity: 1;
     margin-top: -40px;
     transition-delay: .3s;
 }
 
-
-.separator{
-    display:flex;
+.separator {
+    display: flex;
     align-items: center;
     margin-top: 50px;
-  }
-  
-  .separator .line{
+}
+
+.separator .line {
     height: 1px;
     flex: 1;
     background-color: #999;
     width: 20px;
-  }
-  
-  .separator h2{
+}
+
+.separator h2 {
     font-size: 30px;
-      margin-left: 10px;
-      margin-right: 10px;
-      font-weight: 600;
-      margin: auto;
-      margin-bottom: 30px;
-  }
-  
-  .center{text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 600;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.center {
+    text-align: center;
     font-size: 18px;
     color: gray;
-    font-family: emoji;}
-  
-    .centp{
-        line-height: 23px;
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 30px;
-        font-size: 19px;
-        font-family: inherit;
-         
-    }
+    font-family: emoji;
+}
 
-    .foto {
-        margin-top: 32px;
+.centp {
+    line-height: 23px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 19px;
+    font-family: inherit;
+}
+
+.foto {
+    margin-top: 32px;
     float: left;
     display: inline-block;
     width: 100%;
     background-color: #544a46;
     margin-bottom: 35px;
     height: 85px;
-    }
+}
 
-    .all {
-        width: clac(100%/2);
-        float: left;
-        padding: 15px;
-        align-items: center;
-    }
+.all {
+    width: clac(100%/2);
+    padding: 15px;
+    align-items: center;
+    margin-left: 100px;
+}
 
-    .van {
-        float: left;
-        margin-left: 120px; 
-        width: 50px;
-        height: 28px;
+.van {
+    float: left;
+    margin-left: 120px;
+    width: 50px;
+    height: 28px;
     margin-top: 13px;
-    }
+}
 
-    .p {
-        margin-left: 245px;
-        font-size: 18px;
-        /* font-weight: bold; */
-        color: white;
-        font-family: ui-serif;
-        margin-top: 20px;
-    }
+.van2 {
+    color: #e3ffc3;
+    font-size: 16px;
+    text-decoration-line: none;
+}
 
-    .span {
-        text-transform: capitalize;
-        font-weight: bolder;
-        font-size: 25px;
-    }
+.p {
+    margin-left: 245px;
+    font-size: 18px;
+    /* font-weight: bold; */
+    color: white;
+    font-family: ui-serif;
+    margin-top: 20px;
+}
 
-    .last {
-        font-size: 20px;
-        color: grey;
-    }
-    .button1 {
-        margin-right: 150px;
-    }
-    .button {
-        width: calc(100%/6);
-        float: right;
-        margin-top: 25px;
-        padding: 7px;
-        text-transform: uppercase;
-        background-color: rgb(214, 52, 52);
-        color: white;
-        font-size: 16px;
-    }
+.span {
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 25px;
+}
 
-    .grid {
-        margin-top: 30px;
+.last {
+    font-size: 20px;
+    color: grey;
+}
+
+.button1 {
+    margin-right: 150px;
+}
+
+.button {
+    width: calc(100%/6);
+    float: right;
+    margin-top: 25px;
+    padding: 7px;
+    text-transform: uppercase;
+    background-color: rgb(214, 52, 52);
+    color: white;
+    font-size: 16px;
+}
+
+.grid {
+    margin-top: 30px;
     position: relative;
     display: inline;
     clear: both;
     margin-bottom: 30px;
-    }
-    .col-1-2 {
-        width: 50%;
-        float: right;
-        margin-bottom: 35px;
-    }
-    .hh{
-        
-        font-size: 30px;
-        margin-bottom: 20px;
-        font-family: inherit;
-        font-weight: 600;
-    }
+}
 
-.royalp{
+.col-1-2 {
+    width: 50%;
+    float: right;
+    margin-bottom: 35px;
+}
+
+.hh {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+.royalp {
     font-family: inherit;
     line-height: 25px;
     margin-bottom: 5px;
     font-size: 18px;
 }
-.royala{
+
+.royala {
     color: #a52a2ae8;
     text-decoration-line: none;
     font-size: 15px;
 }
-    .center2
-{
-  height:100vh;
-  width:100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.center2 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 /* End Non-Essential  */
 
@@ -376,7 +376,10 @@ main{
     box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
     background-color: #544a46;
 }
+
+
 /* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+
 
 /* Top Half of card, image. */
 
@@ -386,23 +389,23 @@ main{
     padding: 2em 1em;
     position: Absolute;
     top: 16px;
-
-    background-size: 100%; 
+    background-size: 100%;
     background-repeat: no-repeat;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-span{
+span {
     font-weight: bold;
     color: #0c4c0f;
     font-size: 20px;
     line-height: 35px;
 }
 
-.property-card :hover{
+.property-card :hover {
     transform: scale3d(1.2, 1.106, 1);
 }
+
 
 /* .bg{
     background-repeat: no-repeat;
@@ -410,25 +413,29 @@ span{
     clear: both; background-image: url(img/shmag.jpg);
 } */
 
-
-.cardhed{
+.cardhed {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 15px;
     margin-top: 30px;
 }
 
-.content p{
+.content p {
     margin-bottom: 15px;
 }
 
-.footer{
-    
+.footerp {
+    margin-top: 25px;
+    color: #f1e4cc;
+    text-align: start;
+}
+
+.footer {
     width: 100%;
     margin-top: 30px;
     width: 100%;
     clear: both;
-    height: 400px;
+    height: 350px;
     background-color: #4a4442;
     background-image: url(img/foot.jpg);
     background-repeat: no-repeat;
@@ -439,46 +446,110 @@ span{
     line-height: 25px;
 }
 
-
-  
-.col-1-3 {
-    width: 25.5%;
-    float: left;
-    margin-left: 80px;
-  }
-.logotit{
-    font-family: Verdana,sans-serif;
-font-size: 15px;
-line-height: 1.5;
-letter-spacing: 4px;
-color: #FFF;
-
-    font-size: 30px;
+hr {
+    border: 1px solid #3f2c2e;
+    margin-top: 27px;
 }
-  .logo {
+
+
+/* Style the Sticky icons on web page */
+
+.stickyicon-list {
+    position: fixed;
+    top: 200px;
+    transform: translateY(-50%);
+}
+
+.stickyicon-list a {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    transition: all 0.5s ease;
+    color: white;
+    font-size: 20px;
+}
+
+
+/* HOver affect on sticky social media icons */
+
+.stickyicon-list a:hover {
+    color: #000;
+    width: 10px;
+}
+
+
+/* Now we have to design each icon of social media */
+
+.facebook {
+    background: #000;
+    color: white;
+}
+
+.twitter {
+    color: white;
+    background: #000;
+}
+
+.linkedin {
+    background: #000;
+    color: white;
+}
+
+.google {
+    color: white;
+    background: #000;
+}
+
+.instagram {
+    background: #000;
+    color: white;
+}
+
+.youtube {
+    color: white;
+    background: #000;
+}
+
+.col-1-3 {
+    width: 52%;
+    float: left;
+}
+
+.logotit {
+    font-family: Verdana, sans-serif;
+    letter-spacing: 4px;
+    color: #FFF;
+    font-size: 38px;
+}
+
+.logo {
     color: #FFF;
     font-weight: 700;
     font-size: 30px;
 }
 
-.logoimg{
+.logoimg {
     width: 120px;
     margin-left: 30px;
     border-radius: 40%;
+    float: left;
+    margin-right: 25px;
+    margin-top: 33px;
 }
 
-.menue{
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-font-size: 14px;
-line-height: 1.428571429;
-color: #333;
-font-family: 'Roboto', sans-serif;
-box-sizing: border-box;
-margin-top: 0;
-margin-bottom: 10px;
+.menue {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
-.address span, .menu span {
+.address span,
+.menu span {
     color: #FFF;
     font-weight: bold;
     border-bottom: 1px solid #c7c7c7;
@@ -487,37 +558,42 @@ margin-bottom: 10px;
     text-transform: uppercase;
     font-size: 16px;
     letter-spacing: 3px;
-    font-family:  'FontAwesome';
+    font-family: 'FontAwesome';
 }
-.address li, .menu li {
+
+.address li,
+.menu li {
     margin: 20px 0px;
     list-style: none;
 }
-ul, ol {
+
+ul,
+ol {
     margin-top: 0;
     margin-bottom: 10px;
-    
 }
 
-.a{
--webkit-tap-highlight-color: rgba(0,0,0,0);
-line-height: 1.428571429;
-font-family: 'Roboto', sans-serif;
-list-style: none;
-box-sizing: border-box;
-color: #FFF;
-letter-spacing: 3px;
-text-decoration: none;
-font-size: 14px;}
-.address{
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-font-size: 14px;
-line-height: 1.428571429;
-color: #333;
-font-family: 'Roboto', sans-serif;
-box-sizing: border-box;
-margin-top: 0;
-margin-bottom: 10px;
+.a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    line-height: 1.428571429;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+    color: #FFF;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.address {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .address .fa {
@@ -525,56 +601,84 @@ margin-bottom: 10px;
     margin-right: 10px;
     font-size: 18px;
 }
+
 .fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.fa-phone:before {
-    content: "\f095";
+    padding: 10px;
+    text-align: center;
+    margin: 5px 2px;
+    font-size: 30px;
+    width: 50px;
 }
 
-.fa-map-marker:before {
-    content: "\f041";
+.fa-facebook {
+    background: #000;
+    color: white;
 }
 
-.fa-envelope:before {
-    content: "\f0e0";
-    margin-left: -8px;
+.fa-twitter {
+    background: #56423b;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #56423b;
+    color: white;
+}
+
+.fa-snapchat-ghost {
+    background: #000;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa:hover {
+    opacity: 0.8;
 }
 
 .w3-top {
     top: 0;
 }
-.w3-top, .w3-bottom {
+
+.w3-top,
+.w3-bottom {
     position: relative;
     width: 100%;
     z-index: 1;
 }
 
-.w3-white, .w3-hover-white:hover {
+.w3-white,
+.w3-hover-white:hover {
     color: #000!important;
     background-color: #fff!important;
 }
+
 .w3-padding {
     padding: 8px 16px!important;
 }
-.w3-card, .w3-card-2 {
+
+.w3-card,
+.w3-card-2 {
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
+
 .w3-bar {
     width: 100%;
     overflow: hidden;
 }
+
 .w3-wide {
     letter-spacing: 4px;
 }
+
 .w3-bar .w3-button {
     white-space: normal;
 }
+
 .w3-bar .w3-bar-item {
     padding: 8px 16px;
     float: left;
@@ -583,35 +687,43 @@ margin-bottom: 10px;
     display: block;
     outline: 0;
 }
-b, strong {
+
+b,
+strong {
     font-weight: bolder;
 }
+
 .w3-right {
     float: right!important;
     margin-top: 10px;
 }
 
-
-.w3-white, .w3-hover-white:hover {
+.w3-white,
+.w3-hover-white:hover {
     color: #000!important;
     background-color: #fff!important;
 }
+
 .w3-padding {
     padding: 8px 16px!important;
 }
-.w3-card, .w3-card-2 {
+
+.w3-card,
+.w3-card-2 {
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
+
 .w3-bar {
     width: 100%;
     overflow: hidden;
 }
+
 .w3-wide {
     letter-spacing: 4px;
 }
 
-.anav{
-    font-family: Verdana,sans-serif;
+.anav {
+    font-family: Verdana, sans-serif;
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 4px;
@@ -634,16 +746,7 @@ b, strong {
     font-weight: bold;
 }
 
-
-
-
-.footerp{
-    margin-top: 25px;
-    color: #f3f3f3;
-    text-align: start;
-    font-family: inherit;
-}
-button{
+button {
     padding: 10px;
     background-color: azure;
     font-size: 15px;
@@ -656,15 +759,15 @@ button{
     margin-bottom: 35px;
 }
 
+
 /* clothes  -------------------------------------------------*/
-.clotheshed{
+
+.clotheshed {
     width: 100%;
     height: 450px;
-    
 }
 
-.slideshow-item-text-head{
-
+.slideshow-item-text-head {
     max-width: 50%;
     position: absolute;
     top: 45%;
@@ -677,46 +780,47 @@ button{
     font-weight: 600;
 }
 
-.col-1-2-clothes{
+.col-1-2-clothes {
     width: 70%;
     float: right;
     margin-top: 30px;
 }
 
-.clothesp{
+.clothesp {
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 15px;
-    
 }
-.col-1-small{
+
+.col-1-small {
     width: 28%;
     float: left;
 }
+
 .col-1-small img {
     width: 100%;
 }
 
-.col-1-2-clothes-man{
+.col-1-2-clothes-man {
     width: 60%;
     float: left;
     clear: both;
     margin-top: 40px;
     margin-bottom: 30px;
 }
-.col-1-small-man{
+
+.col-1-small-man {
     width: 28%;
     float: right;
     margin-top: 40px;
     margin-bottom: 30px;
-    
 }
 
 .col-1-small-man img {
     width: 100%;
 }
-.separator2{
-   
+
+.separator2 {
     align-items: center;
     margin-top: 30px;
     clear: both;
@@ -724,73 +828,70 @@ button{
     font-size: 25px;
     color: brown; */
 }
-  
 
 #myVideo {
     position: relative;
     right: 0;
     bottom: 0;
-    min-width: 100%; 
+    min-width: 100%;
     min-height: 100%;
     width: 100%;
     height: auto;
     margin: auto;
-  }
-  
- 
-  .spanhed{
+}
+
+.spanhed {
     color: aliceblue;
     font-size: 1.5rem;
-  }
+}
 
-  .clohed{
+.clohed {
     margin: auto;
     color: brown;
     margin-top: 30px;
     text-align: center;
-  }
+}
 
-  ul li {
-
+ul li {
     font-size: 18px;
     font-weight: 600;
     line-height: 20px;
     color: #751f05;
-  }
+}
 
-  .clo-ul-p{
+.clo-ul-p {
     margin: 10px;
     font-weight: inherit;
     font-size: 17px;
+}
 
-  }
-
-  .hattah{
+.hattah {
     margin: auto;
     font-size: 30px;
     color: brown;
     margin-bottom: 20px;
     margin-top: 20px;
     font-weight: 600;
-  }
+}
 
-  
-  input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
-  }
-  
-  label {
+}
+
+label {
     padding: 12px 12px 12px 0;
     display: inline-block;
     margin-left: 100px;
     font-size: 20px;
-  }
-  
-  input[type=submit] {
+}
+
+input[type=submit] {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
@@ -798,47 +899,72 @@ button{
     border-radius: 4px;
     cursor: pointer;
     float: right;
-  }
-  
-  input[type=submit]:hover {
+}
+
+input[type=submit]:hover {
     background-color: #45a049;
-  }
-  
-  .containerform {
+}
+
+.containerform {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-  }
-  
-  .col-25 {
+}
+
+.col-25 {
     float: left;
     width: 25%;
     margin-top: 6px;
-  }
-  
-  .col-75 {
+}
+
+.col-75 {
     float: left;
     width: 75%;
     margin-top: 6px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
-  
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
     }
-  }
-  .formh{
+}
+
+.formh {
     margin: 20px;
     font-size: 25px;
     font-family: monospace;
     color: chocolate;
-  }
+}
+
+.col-1-10 {
+    display: inline-flex;
+    margin-left: 169px;
+    float: left;
+    clear: both;
+    margin-bottom: 30px;
+}
+
+.anav:hover {
+    color: #da3e44;
+    transform: scale(1.2);
+}
+
+.copy {
+    float: right;
+    color: rgb(194, 176, 176);
+}
