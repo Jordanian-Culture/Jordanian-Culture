@@ -277,17 +277,27 @@ ul, ol {
 
   .box{
     font-family:'Texturina',serif ;
-    font-size: larger;
-    font-weight: 600;
+    font-size:larger;
+    font-weight: 500;
     background-color:white; 
     margin:25px 15px;
     border-radius:5px;
     width: 100%;
-    height: 239px;
+    height: 270px;
     line-height: 1.5;
     padding: 0 24px;
-    padding-top: 40px;
+    padding-top: 30px;
+    text-align: justify;
     
+  }
+
+  h5
+  {
+      font-weight: bold;
+    font-size: larger;
+    padding-top: -7px; 
+    padding-bottom: 20px;; 
+    text-align:center;
   }
 
   .dabkehbox {
@@ -316,7 +326,7 @@ ul, ol {
     height: 350px;
     padding: 0 24px;
     padding-top: 50px;
-    line-height: 1.5;
+    line-height: 1.4;
     
   }
 
@@ -350,6 +360,21 @@ ul, ol {
     
   }
 
+  /*.newbox
+  {
+    font-family:'Texturina',serif ;
+    font-size: large;
+    font-weight: 600;
+    background-color:white; 
+    margin:25px 15px;
+    border-radius:5px;
+    width: 100%;
+    height: 350px;
+    padding: 0 24px;
+    padding-top: 50px;
+    line-height: 1.5; 
+  }*/
+
   
    h4{
 
@@ -358,6 +383,7 @@ ul, ol {
     font-size:x-large;
     line-height: normal;
     color:rgb(12, 12, 12);
+    
 
     }
 
@@ -372,7 +398,8 @@ ul, ol {
     }
 
 .box1{
-    background-color: #9c3030;
+    background-color: #a7564d;
+
     }
 
 .shadow1{
@@ -417,6 +444,15 @@ ul, ol {
         transform:rotate(-4deg);
       }
 
+     /* .newCelebrationContent
+      {
+        display: flex;
+        margin-bottom: 30px;
+        align-items: center;
+        font-family:'Texturina',serif ;
+        font-weight: 500;
+        text-align: justify;
+      }*/
 
 
     .dabkeh
@@ -426,6 +462,7 @@ ul, ol {
         align-items: center;
         font-family:'Texturina',serif ;
         font-weight: 500;
+        text-align: justify;
         
     }
 
@@ -434,6 +471,8 @@ ul, ol {
      margin-right: 25px;
      
     }
+
+    
     
 
     #samerDance
@@ -443,11 +482,12 @@ ul, ol {
         align-items: center;
         font-family:'Texturina',serif ;
         font-weight: 500;
+        text-align: justify;
     }
 
     #samerDance-text
     {
-        margin-right: 10px;
+        margin-right: 20px;
     }
 
     #Al-Farda
@@ -457,6 +497,7 @@ ul, ol {
         align-items: center; 
         font-family:'Texturina',serif ;
         font-weight: 500;
+        text-align: justify;
     }
 
     #Al-Farda-text
@@ -472,17 +513,18 @@ ul, ol {
         align-items: center; 
         font-family:'Texturina',serif ;
         font-weight: 500;
+        text-align: justify;
     }
 
     #Foodfeast-text
     {
-        margin-right: 10px;
+        margin-right: 20px;
     }
 
     .celeHed{
         width: 100%;
         height: 450px;
-        box-shadow: 10px 13px #d6cfcf;
+        
     }
     
     
@@ -508,6 +550,8 @@ ul, ol {
         padding-right: 15px;
         
     }
+
+
 
    
     
