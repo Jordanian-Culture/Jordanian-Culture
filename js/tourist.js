@@ -598,45 +598,47 @@ function getRandomNo( min, max, lastNo ) {
 // PLace Form
 
 
-function NewPLaceSection(title, text, path) {
+function NewPLaceSection( title, text, path ) {
   this.title = title;
   this.text = text;
   this.path = path;
-};
- 
+}
+
 NewPLaceSection.all = [];
- 
+
 function runderPLace() {
- 
- 
-  const parentElement = document.getElementById('newPLaceContent');
- 
-  for (let i = 0; i < NewPLaceSection.all.length; i++) {
-    const h4Element = document.createElement('h4');
-    parentElement.appendChild(h4Element);
+
+
+  const parentElement = document.getElementById( 'newPLaceContent' );
+
+  for ( let i = 0; i < NewPLaceSection.all.length; i++ ) {
+    const h4Element = document.createElement( 'h4' );
+    h4Element.setAttribute( 'class', 'newH4' );
+    parentElement.appendChild( h4Element );
     h4Element.textContent = `${NewPLaceSection.all[i].title}`;
-    console.log(NewPLaceSection.all[i].title);
- 
-    const pElement = document.createElement('p');
-    parentElement.appendChild(pElement);
+    console.log( NewPLaceSection.all[i].title );
+
+    const pElement = document.createElement( 'p' );
+    pElement.setAttribute( 'class', 'newP' );
+    parentElement.appendChild( pElement );
     pElement.textContent = `${NewPLaceSection.all[i].text}`;
-    console.log(NewPLaceSection.all[i].text);
- 
-    const ImgElement = document.createElement('img');
-    parentElement.appendChild(ImgElement);
-    ImgElement.setAttribute('style', 'width: 280px; height:475px;');
+    console.log( NewPLaceSection.all[i].text );
+
+    const ImgElement = document.createElement( 'img' );
+    parentElement.appendChild( ImgElement );
+    ImgElement.setAttribute( 'style', 'width: 450px; height:300px;' );
     ImgElement.src = `${NewPLaceSection.all[i].path}`;
-    console.log(NewPLaceSection.all[i].path);
+    console.log( NewPLaceSection.all[i].path );
   }
- 
+
 }
 
 function getData() {
 
-  const dataPlace = localStorage.getItem('nNewPLaceSection');
-  
-  if (dataPlace) {
-    const objDataPlace = JSON.parse(dataPlace);
+  const dataPlace = localStorage.getItem( 'nNewPLaceSection' );
+
+  if ( dataPlace ) {
+    const objDataPlace = JSON.parse( dataPlace );
     NewPLaceSection.all = objDataPlace;
     runderPLace();
   }
