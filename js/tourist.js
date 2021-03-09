@@ -633,12 +633,12 @@ function runderPLace() {
 
 function getData() {
 
-  const dataPlace = localStorage.getItem('nNewPlaceSection');
+  const dataPlace = localStorage.getItem('nNewPLaceSection');
   
   if (dataPlace) {
     const objDataPlace = JSON.parse(dataPlace);
-    NewFoodSection.all = objDataPlace;
-    runderPlace();
+    NewPLaceSection.all = objDataPlace;
+    runderPLace();
   }
 }
 

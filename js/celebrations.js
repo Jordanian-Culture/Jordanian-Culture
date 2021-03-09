@@ -27,7 +27,6 @@ function runderCelebration() {
  
     const ImgElement = document.createElement('img');
     parentElement.appendChild(ImgElement);
-    ImgElement.setAttribute('style', 'width: 280px; height:475px;');
     ImgElement.src = `${NewCelebrationSection.all[i].path}`;
     console.log(NewCelebrationSection.all[i].path);
   }
@@ -40,7 +39,7 @@ function getData() {
   const dataCelebration = localStorage.getItem('nNewCelebrationSection');
   if (dataCelebration) {
     const objDataCelebration = JSON.parse(dataCelebration);
-    NewFoodSection.all = objDataCelebration;
+    NewCelebrationSection.all = objDataCelebration;
     runderCelebration();
   } 
 }
