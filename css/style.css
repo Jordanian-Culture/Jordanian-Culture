@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@300&display=swap');
+
+
+
+
+
 * {
     box-sizing: border-box;
+    font-family: 'Texturina', serif;
+}
+
+* p{
+    font-family: 'Texturina', serif;
 }
 
 header {
@@ -77,18 +88,17 @@ animation: bg 30s infinite; */
 
 .slideshow-item-text h3 {
     font-size: 4rem;
-    font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 2.5rem;
     font-weight: 800;
-    font-family: sans-serif;
+    font-family: 'Texturina', serif;
     margin-top: 10px;
 }
 
 .slideshow-item-text p {
     font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Texturina', serif;
     letter-spacing: 1px;
     font-weight: 300;
     line-height: 30px;
@@ -428,6 +438,7 @@ span {
     margin-top: 25px;
     color: #f1e4cc;
     text-align: start;
+    font-family: 'Texturina', serif;
 }
 
 .footer {
@@ -516,7 +527,7 @@ hr {
 }
 
 .logotit {
-    font-family: Verdana, sans-serif;
+    font-family: 'Texturina', serif;
     letter-spacing: 4px;
     color: #FFF;
     font-size: 38px;
@@ -724,7 +735,7 @@ strong {
 }
 
 .anav {
-    font-family: Verdana, sans-serif;
+    font-family: 'Texturina', serif;
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 4px;
@@ -779,6 +790,7 @@ button {
     font-size: 50px;
     margin-left: 35%;
     font-weight: 600;
+    font-family: 'Texturina', serif;
 }
 
 .col-1-2-clothes {
