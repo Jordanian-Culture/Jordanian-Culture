@@ -1,89 +1,8 @@
  'use strict';
 
-function NewSection(title, text, path) {
-  this.title = title;
-  this.text = text;
-  this.path = path;
-
-};
-
-NewSection.all = [];
-
-// function runder() {
-
-
-//   const parentElement = document.getElementById('newcontent');
-
-//   for (let i = 0; i < NewSection.all.length; i++) {
-//     const h4Element = document.createElement('h2');
-//     parentElement.appendChild(h4Element);
-//     h4Element.textContent = `${NewSection.all[i].title}`;
-//     console.log(NewSection.all[i].text);
-
-//     const pElement = document.createElement('p');
-//     parentElement.appendChild(pElement);
-//     pElement.textContent = `${NewSection.all[i].text}`;
-//     console.log(NewSection.all[i].title);
-
-
-//     const ImgElement = document.createElement('img');
-//     parentElement.appendChild(ImgElement);
-//     ImgElement.setAttribute('style', 'width: 280px; height:475px;');
-//     ImgElement.src = `${NewSection.all[i].path}`;
-//     console.log(NewSection.all[i].path);
-
-//   }
-
-// }
-
-
-// const formElement = document.getElementById('Adding-Form');
-
-// formElement.addEventListener('submit', function (event) {
-
-//   event.preventDefault();
-//   console.log()
-
-
-
-//   const nNewSectionTitle = event.target.title.value;
-//   const nNewSectionsubject = event.target.subject.value;
-//   const nNewSectionImg = event.target.img.value;
-
-
-//   const nNewSectionclothes = new NewSection(nNewSectionTitle, nNewSectionsubject,nNewSectionImg);
-
-//   NewSection.all.push(nNewSectionclothes);
-
-//   console.log(NewSection.all);
-
-//   formElement.reset();
-
-//   localStorage.setItem('nNewSectionclothes', JSON.stringify(NewSection.all));
-
-//   document.getElementById('newcontent').innerHTML = "";
-
-//   getData();
-
-// });
-
-// function getData() {
-//   const data = localStorage.getItem('nNewSectionclothes');
-
-//   if (data) {
-//     const objData = JSON.parse(data);
-//     NewSection.all = objData;
-//     runder();
-//     document.getElementById('newcontent').style.display = 'block'
-//   }
-// }
-
-// getData();
-
-// <------------------>
-
 
 let image = document.getElementById('image');
+
 let images = [
   '../assets/indeximg/man4.jpg',
   '../assets/indeximg/man13.jpg',
@@ -163,3 +82,57 @@ setInterval(function () {
 }, 1500
 
 ) ;
+
+
+// Form Section
+
+function NewClothesSection(title, text, path) {
+  this.title = title;
+  this.text = text;
+  this.path = path;
+};
+ 
+
+NewClothesSection.all = [];
+
+
+
+function runderClothes() {
+   
+   
+  let parentElement = document.getElementById('newClothesContent');
+ 
+  for (let i = 0; i < NewClothesSection.all.length; i++) {
+    const h4Element = document.createElement('h4');
+    parentElement.appendChild(h4Element);
+    h4Element.textContent = `${NewClothesSection.all[i].title}`;
+    console.log(NewClothesSection.all[i].title);
+ 
+    const pElement = document.createElement('p');
+    parentElement.appendChild(pElement);
+    pElement.textContent = `${NewClothesSection.all[i].text}`;
+    console.log(NewClothesSection.all[i].text);
+ 
+    const ImgElement = document.createElement('img');
+    parentElement.appendChild(ImgElement);
+    ImgElement.setAttribute('style', 'width: 280px; height:475px;');
+    ImgElement.src = `${NewClothesSection.all[i].path}`;
+    console.log(NewClothesSection.all[i].path);
+  }
+ 
+}
+
+
+function getData() {
+  const dataClothes = localStorage.getItem('nNewClothesSection');
+
+
+  if (dataClothes) {
+    const objDataClothes = JSON.parse(dataClothes);
+    NewClothesSection.all = objDataClothes;
+    runderClothes();
+  }
+}
+
+
+getData();

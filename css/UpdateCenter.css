@@ -2,19 +2,19 @@ html {
     height:100%;
   }
   
-  body {
-    margin:auto;
-    width: 960px;
-  }
+header{
+  width: 200px;
+  height: 200px;
+}
+
 main{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 253px 3px;
-    gap: 18px;
+    margin-top: 250px;
 }
   .bg {
     animation:slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    background-image: linear-gradient(-60deg,  #ff5722 50%, #ffc107 50%);
     bottom:0;
     left:-50%;
     opacity:.5;
@@ -69,8 +69,8 @@ main{
 
 
   .anav {
-    background-color: #60c67f;
-    box-shadow: 0 5px 0 #79d24c;
+    background-color: #ff6c3d;
+    box-shadow: 0 5px 0 #ff8636;
     color: white;
     padding: 14px 17px;
     position: relative;
@@ -114,14 +114,14 @@ main{
     /* flex: 0 1 700px; */
     /* margin: auto; */
     padding: 10px 10px;
-    width: 500px;
+    width: 100%;
     height: 500px;
     /* margin: 230px 243px;*/
   }
   
   .screen {
     position: relative;
-    background: #ddf2eb;
+    background: #faf2e9;;
     border-radius: 15px;
   }
   
@@ -202,7 +202,7 @@ main{
     display: flex;
     flex-direction: column;
     position: relative;
-    color: #53be98;
+    color: #ff6c3d;
     font-size: 26px;
   }
   
@@ -214,7 +214,7 @@ main{
     bottom: -10px;
     width: 25px;
     height: 4px;
-    background: #53be98;
+    background: #ff6c3d;
   }
   
   .app-contact {
@@ -260,14 +260,14 @@ main{
   .app-form-button {
     background: none;
     border: none;
-    color: #1fa6ff;
+    color: #ff6c3d;
     font-size: 14px;
     cursor: pointer;
     outline: none;
   }
   
   .app-form-button:hover {
-    color: #b9134f;
+    color: #ffc926;
   }
   
   .credits {
@@ -327,3 +327,91 @@ main{
     }
   }
   
+  /*************************/
+  
+
+.trail {
+	width: 100%;
+	height: 200%;
+	position: relative;
+	/*background: url(https://raw.githubusercontent.com/ArtemKolishchak/Animated-Wavy-Background/master/bg.jpg);*/
+  background-image: url(https://cdn.pixabay.com/photo/2017/08/06/19/37/archaeological-2595597_1280.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.trail .wave {
+	position: absolute;
+	width: 100%;
+	height: 143px;
+	bottom: 0;
+	left: 0;
+	background: url(https://raw.githubusercontent.com/ArtemKolishchak/Animated-Wavy-Background/master/wave.png);
+	-webkit-animation: animate 10s linear infinite;
+	        animation: animate 10s linear infinite;
+}
+
+.trail .wave:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 143px;
+	bottom: 0;
+	left: 0;
+	background: url(https://raw.githubusercontent.com/ArtemKolishchak/Animated-Wavy-Background/master/wave.png;
+	opacity: 0.6;
+	-webkit-animation-delay:  -5s;
+	        animation-delay:  -5s;
+	-webkit-animation: animate 20s linear infinite;
+	        animation: animate 20s linear infinite;
+}
+
+.trail .wave:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 143px;
+	bottom: 0;
+	left: 0;
+	background: url(https://raw.githubusercontent.com/ArtemKolishchak/Animated-Wavy-Background/master/wave.png);
+	opacity: 0.4;
+	-webkit-animation: animate-reverse 10s linear infinite;
+	        animation: animate-reverse 10s linear infinite;
+}
+
+@-webkit-keyframes animate {
+	0% {
+		background-position: 0;
+	}
+	100% {
+		background-position: 1360px;
+	}
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0;
+	}
+	100% {
+		background-position: 1360px;
+	}
+}
+
+@-webkit-keyframes animate-reverse {
+	0% {
+		background-position: 1360px;
+	}
+	100% {
+		background-position: 0;
+	}
+}
+
+@keyframes animate-reverse {
+	0% {
+		background-position: 1360px;
+	}
+	100% {
+		background-position: 0;
+	}
+}
