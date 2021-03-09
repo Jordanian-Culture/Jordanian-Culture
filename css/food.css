@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@300&display=swap');
+   
+
+
 main{
     width: 960px;
     margin: auto;
 }
 
-
 * {
-    box-sizing: border-box;
-  }
+    font-family: 'Texturina', serif;
+}
 
 header{
    width: 100% ;
@@ -83,7 +86,7 @@ b, strong {
 }
 
 .anav{
-    font-family: Verdana,sans-serif;
+    font-family: 'Texturina', serif;
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 4px;
@@ -103,6 +106,10 @@ b, strong {
     outline: 0;
     white-space: normal;
     font-weight: bold;
+}
+.anav:hover{
+    color: #da3e44;
+    transform: scale(1.2);
 }
 
 
@@ -174,7 +181,7 @@ box-shadow: 10px 13px #d6cfcf;
 /* header------------------------------ */
 
 
-}
+
 .clotheshed{
     width: 100%;
     height: 450px;
@@ -182,101 +189,106 @@ box-shadow: 10px 13px #d6cfcf;
 }
 #maimage {
     float: right;
-    width: 350 px;
-    height: 250px;
+    width: 430px;
+    height: 290px;
     margin: 10px;
     margin-top: 20px;
     clear: both;
     border-radius: 15px;
     box-shadow: 0 0 2px 1px gray(73, 90, 95, 0.5);
+    padding-left: 10px;
 }
 #simage {
     float: right;
-    width: 350 px;
-    height: 250px;
+    width: 430px;
+    height: 290px;
     margin: 10px;
     margin-top: 20px;
     clear: both;
     border-radius: 15px;
     box-shadow: 0 0 2px 1px gray(73, 90, 95, 0.5);
+    padding-left: 10px;
 }
 #kimage  {
     float: right;
-    width: 350 px;
-    height: 250px;
+    width: 430px;
+    height: 290px;
     margin: 10px;
     margin-top: 20px;
     clear: both;
     border-radius: 15px;
     box-shadow: 0 0 2px 1px gray(73, 90, 95, 0.5);
+    padding-left: 10px;
 }
 
 #fimage {
     float: left;
-    width: 350 px;
-    height: 250px;
+    width: 430px;
+    height: 290px;
     margin: 10px;
     margin-top: 20px;
     clear: both;
     border-radius: 15px;
     box-shadow: 0 0 2px 1px gray(73, 90, 95, 0.5);
+    padding-right: 10px;
 }
 
 #rimage {
     float: left;
-    width: 350 px;
-    height: 250px;
+    width: 430px;
+    height: 290px;
     margin: 10px;
     margin-top: 20px;
     clear: both;
     border-radius: 15px;
     box-shadow: 0 0 2px 1px gray(73, 90, 95, 0.5);
-
+    padding-right: 10px;
 }
 
 #mimage {
     float: left;
-    width: 350 px;
-    height: 250px;
+    width: 430px;
+    height: 290px;
     margin: 10px;
     margin-top: 20px;
     clear: both;
     border-radius: 15px;
     box-shadow: 0 0 2px 1px gray(73, 90, 95, 0.5);
+    padding-right: 10px;
 }
 
 #mkimage {
     float: left;
-    width: 350 px;
-    height: 250px;
+    width: 430px;
+    height: 290px;
     margin: 10px;
     margin-top: 20px;
     clear: both;
     border-radius: 15px;
     box-shadow: 0 0 2px 1px gray(73, 90, 95, 0.5);
+    padding-right: 10px;
 }
 
 
 #mmm{
     font-size: 30px;
     font-weight: bold;
+    position: relative;
+   left : 37%;
 }
-
 
 #tite {
  font-size: 30px;
  font-weight: bold;
 }
-
-main section p {
-    display: inline;
-    text-align: justify;
-    width: 460px;
-    height: 250px;
-    font-family: 'Texturina',serif;
+#enw {
+    font-size: 22px;
+    font-weight: bold;
 }
 
-
+#marr {
+    padding-top: 8px;
+}
 
 
 
@@ -430,6 +442,9 @@ box-sizing: border-box;
 
 .wrap{
     margin-left:20px;
+    display: inline;
+    text-align: justify;
+    font-size: 16px;
     
   }
 
@@ -440,7 +455,7 @@ box-sizing: border-box;
     margin:25px 15px;
     border-radius:5px;
     width: 100%;
-    height: 280px;
+    height: 320px;
     line-height: 1.5;
     padding: 0 24px;
   }
@@ -498,11 +513,18 @@ box-sizing: border-box;
 
  /* ............................................................................................ */
 
- .wrap2{
+#wrap2{
     margin-left:20px;
-    
+    display: inline;
+    text-align: justify;
+    font-size: 20px;
+    font-family: initial;
   }
-
+  p {
+    display: inline;
+    text-align: justify;
+    font-size: 19px;
+}
 
   .box2{
     float:left;
@@ -510,7 +532,7 @@ box-sizing: border-box;
     margin:25px 15px;
     border-radius:5px;
     width: 100%;
-    height: 300px;
+    height: 355px;
     line-height: 1.5;
     padding: 0 24px;
   }
@@ -523,3 +545,24 @@ box-sizing: border-box;
   }
 .box12{
     background-image: url(../assets/foodImg/awqmnkwrmq8gm25j5_vp.jpg);}
+
+
+
+    .box3{
+        float:left;
+        background-color:white; 
+        margin:25px 15px;
+        border-radius:5px;
+        width: 100%;
+        height: 355px;
+        line-height: 1.5;
+        padding: 0 24px;
+        display: none;
+      }
+      .box3 h3{
+        font-family: 'Texturina',serif;
+        font-weight:normal;
+        text-align:center;
+        padding-top:60px;
+        color:#fff;
+      }
