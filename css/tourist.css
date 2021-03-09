@@ -982,6 +982,16 @@ box-sizing: border-box;
     box-shadow: 10px 10px 10px #808080;
   }
 
+  .grid-container img{
+    filter:contrast(130%);
+
+  }
+
+  .clotheshed{
+    filter:contrast(110%);
+
+  }
+
 
   .footer{
         
