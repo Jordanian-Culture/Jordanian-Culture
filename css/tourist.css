@@ -14,14 +14,24 @@ body {
 
 header{
   width: 100%;
-  background-image: url(https://pbs.twimg.com/media/EPm7A1_WsAMgPMB?format=jpg&name=large);
   background-repeat: no-repeat;
   background-size: cover;
-
   height: 550px;
   margin-top: 0px;
+
 }
 
+.clotheshed{
+  width: 100%;
+  height: 450px;
+  
+}
+
+.logoimgnav{
+  float: left;
+  width: 200px;
+  height: 45px;
+}
 h1 {
   font-size: 25px;
   font-weight: bolder;
