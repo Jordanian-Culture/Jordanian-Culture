@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
 
 function NewSection ( title, text , path ) {
   this.title = title;
@@ -74,6 +74,6 @@ function getData() {
 }
 
 getData();
-
+*/
 
 
