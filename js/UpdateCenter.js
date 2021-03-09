@@ -130,6 +130,7 @@ function NewClothesSection(title, text, path) {
    
     getData();
    
+   
   });
 
 // PLace
