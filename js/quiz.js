@@ -184,28 +184,28 @@ const score2Div2 = document.getElementById("scorecontainer2");
 let question2s = [
     {
         question2 : "ما معنى مقولة (دير بالك عحالك)؟",
-        imgSrc2 : "img/5.gif",
+        imgSrc2 : "../assets/quizImg/5.gif",
         choice2A : "اسلوب تهديد غير مباشر",
         choice2B : "انتبه على نفسك من الخطر",
         choice2C : "اهتم بنفسك",
         correct2 : "2A"
     },{
         question2 : "ما معنى مقولة (عندي موضوعك)؟",
-        imgSrc2 : "img/6.gif",
+        imgSrc2 : "../assets/quizImg/6.gif",
         choice2A : "انا اعلم كل اسرارك",
         choice2B : "تقال عند الاستعداد التام لتقديم خدمة ما",
         choice2C : "لا تقلق الامور بخير",
         correct2 : "2B"
     },{
         question2 : "ما معنى مقولة (حصتي)؟",
-        imgSrc2 : "img/7.gif",
+        imgSrc2 : "../assets/quizImg/7.gif",
         choice2A : "جزئي الخاص",
         choice2B : "درسي الخاص",
         choice2C : "صديقي المقرب",
         correct2 : "2C"
     },{
         question2 : "ما معنى مقولة (ينعن عمري)؟",
-        imgSrc2 : "img/8.gif",
+        imgSrc2 : "../assets/quizImg/8.gif",
         choice2A : "مقولة عند الغضب",
         choice2B : "شتيمة",
         choice2C : "التغزل",
@@ -320,11 +320,11 @@ function score2Render(){
     const score2PerCent = Math.round(100 * score2/question2s.length);
     
     // choose the image based on the score2PerCent
-    let img = (score2PerCent >= 80) ? "img/5.png" :
-              (score2PerCent >= 60) ? "img/4.png" :
-              (score2PerCent >= 40) ? "img/3.png" :
-              (score2PerCent >= 20) ? "img/2.png" :
-              "img/1.png";
+    let img = (score2PerCent >= 80) ? "../assets/quizImg/5.png" :
+              (score2PerCent >= 60) ? "../assets/quizImg/4.png" :
+              (score2PerCent >= 40) ? "../assets/quizImg/3.png" :
+              (score2PerCent >= 20) ? "../assets/quizImg/2.png" :
+              "../assets/quizImg/1.png";
     
     score2Div2.innerHTML = "<img src="+ img +">";
     score2Div2.innerHTML += "<p>"+ score2PerCent +"%</p>";
@@ -351,28 +351,28 @@ const score3Div3 = document.getElementById("scorecontainer3");
 let question3s = [
     {
         question3 : "يقال هذا المثل عند تشبيه البنت بأمها في صفاتها وشخصيتها",
-        imgSrc3 : "img/9.gif",
+        imgSrc3 : "../assets/quizImg/9.gif",
         choice3A : "إقلب الطنجرة على تمها بتطلع البنت لامها",
         choice3B : "من سلمك مذبحه لا تذبحه",
         choice3C : "الأم مثل بنتها",
         correct3 : "3A"
     },{
         question3 : "يعبر هذا المثل عن الشخص الكسول والغير مبالي",
-        imgSrc3 : "img/10.gif",
+        imgSrc3 : "../assets/quizImg/10.gif",
         choice3A : "من رادك ريده ومن طلب بعدك جافيه",
         choice3B : "الجمال تعارك وجملنا بارك",
         choice3C : "الغربه بتضيع الاصل",
         correct3 : "3B"
     },{
         question3 : "يشير هذا المثل إلى إن المظاهر دائماً ما تخدع الإنسان لذلك يجب التأني قبل إتخاذ الأحكام والقرارات",
-        imgSrc3 : "img/11.gif",
+        imgSrc3 : "../assets/quizImg/11.gif",
         choice3A : "عنب الدروز كل حبه برصاصه",
         choice3B : "عمر القصير ما يوكل تين",
         choice3C : "مش كل حمرا لحمه",
         correct3 : "3C"
     },{
         question3 : "يدل على العفو عند المقدرة وإظهار التسامح مع الأشخاص المبادرين والراغبين في الصلح",
-        imgSrc3 : "img/12.gif",
+        imgSrc3 : "../assets/quizImg/12.gif",
         choice3A : "من رادك ريده ومن طلب بعدك جافيه",
         choice3B : "الجمال تعارك وجملنا بارك",
         choice3C : "من سلمك مذبحه لا تذبحه",
@@ -487,11 +487,11 @@ function score3Render(){
     const score3PerCent = Math.round(100 * score3/question3s.length);
     
     // choose the image based on the score3PerCent
-    let img = (score3PerCent >= 80) ? "img/5.png" :
-              (score3PerCent >= 60) ? "img/4.png" :
-              (score3PerCent >= 40) ? "img/3.png" :
-              (score3PerCent >= 30) ? "img/3.png" :
-              "img/1.png";
+    let img = (score3PerCent >= 80) ? "../assets/quizImg/5.png" :
+              (score3PerCent >= 60) ? "../assets/quizImg/4.png" :
+              (score3PerCent >= 40) ? "../assets/quizImg/3.png" :
+              (score3PerCent >= 30) ? "../assets/quizImg/3.png" :
+              "../assets/quizImg/1.png";
     
     score3Div3.innerHTML = "<img src="+ img +">";
     score3Div3.innerHTML += "<p>"+ score3PerCent +"%</p>";
