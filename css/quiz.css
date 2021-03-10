@@ -108,7 +108,6 @@ body {
         line-height: 1.5;
         letter-spacing: 4px;
         box-sizing: inherit;
-     
         overflow: hidden;
         text-decoration: none;
         color: inherit;
@@ -123,6 +122,7 @@ body {
         display: block;
         outline: 0;
         white-space: normal;
+        font-weight: 700;
     }
     .anav:hover{
         color: #da3e44;
@@ -490,6 +490,7 @@ h3 {
     float: left;
     width: 200px;
     height: 45px;
+    margin: -9px 0;
 }
 
 .slideshow-item-text-head{
