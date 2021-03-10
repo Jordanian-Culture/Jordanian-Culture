@@ -8,7 +8,10 @@
      '../assets/indexImg/man13.jpg',
      '../assets/indexImg/man14.jpg',
      '../assets/indexImg/man1.jpg',
-     '../assets/indexImg/man4.jpg',
+     '../assets/indexImg/man4.jpg'
+
+
+
 
  ];
 
@@ -48,7 +51,7 @@
      '../assets/indexImg/women12.jpg',
      '../assets/indexImg/women1.jpg',
      '../assets/indexImg/women13.jpg',
-     '../assets/indexImg/women8.jpg',
+     '../assets/indexImg/women8.jpg'
 
 
 
@@ -70,7 +73,7 @@
      '../assets/indexImg/women2.jpg',
      '../assets/indexImg/women10.jpg',
      '../assets/indexImg/clo2.jpg',
-     '../assets/indexImg/women2.jpg',
+     '../assets/indexImg/women2.jpg'
 
  ];
 
@@ -119,6 +122,7 @@
          ImgElement.src = `${NewClothesSection.all[i].path}`;
          console.log(NewClothesSection.all[i].path);
      }
+     document.getElementById('newclothes').style.display = 'block';
 
  }
 
@@ -132,6 +136,9 @@
          NewClothesSection.all = objDataClothes;
          runderClothes();
      }
+
+
+
  }
 
 
