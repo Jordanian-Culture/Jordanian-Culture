@@ -137,6 +137,11 @@ b, strong {
   padding: 30px;
 }
 
+hr {
+  border: 1px solid #3f2c2e;
+  margin-top: 27px;
+} 
+
 .copy {
   float: right;
   color: rgb(194, 176, 176);
@@ -222,6 +227,8 @@ b, strong {
   clear: both;
   margin-bottom: 30px;
 }
+
+
   
        
  /*-------- end of footer ----------------*/
@@ -255,7 +262,7 @@ b, strong {
 
   h5
   {
-      font-weight: bold;
+    font-weight: bold;
     font-size: larger;
     padding-top: -7px; 
     padding-bottom: 20px; 
@@ -322,13 +329,16 @@ b, strong {
     
   }
 
-  /*
+   #new
+ {
+  display: none;
+
+ }
+  
   .newbox
   {
-    display:none;
     font-family:'Texturina',serif ;
     font-size: large;
-    font-weight: 600;
     background-color:white; 
     margin:25px 15px;
     border-radius:5px;
@@ -336,9 +346,20 @@ b, strong {
     height: 350px;
     padding: 0 24px;
     padding-top: 50px;
-    line-height: 1.5; 
+    line-height:1.5;
 
-  }*/
+  } 
+
+  #newCelebrationContent
+      {
+        display: flex;
+        margin-bottom: 30px;
+        align-items: center;
+        font-family:'Texturina',serif ;
+        font-weight: 500;
+        text-align: justify;
+        line-height: 1.9;
+      }
 
   
    h4{
@@ -408,16 +429,7 @@ b, strong {
         transform:rotate(-4deg);
       }
 
-     /* .newCelebrationContent
-      {
-        display: flex;
-        margin-bottom: 30px;
-        align-items: center;
-        font-family:'Texturina',serif ;
-        font-weight: 500;
-        text-align: justify;
-      }*/
-
+     
 
     .dabkeh
     {
@@ -491,6 +503,24 @@ b, strong {
     {
         margin-right: 20px;
         
+    }
+    #newCelebrationContent-video
+    {
+      margin-right: 20px;
+    }
+    #newCelebrationContent-h4
+    {
+      
+      margin-bottom: 170px;
+      
+      
+    }
+
+    #newCelebrationContent-text
+    {
+      margin-left: -70px;
+      margin-top: 40px;
+     
     }
 
     .celeHed{
