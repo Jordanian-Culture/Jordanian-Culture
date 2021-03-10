@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Texturina:wght@300&display=swap');
-
-
-
 * {
     box-sizing: border-box;
     font-family: 'Texturina', 'serif';
@@ -125,7 +122,6 @@ body {
     }
     .slideshow-item-text h3 {
         font-size: 2rem;
-        
     }
     .slideshow-item-text p {
         font-size: .8rem;
@@ -447,8 +443,6 @@ span {
     margin-left: 75px;
 }
 
-
-
 .logo {
     color: #FFF;
     font-weight: 700;
@@ -652,7 +646,6 @@ strong {
     white-space: normal;
     font-weight: bold;
 }
-
 
 button {
     padding: 10px;
@@ -890,6 +883,8 @@ input[type=submit]:hover {
     margin-top: 30px;
     margin-bottom: 20px;
     margin-left: 315px;
+    clear: both;
+    position: relative;
 }
 
 #newClothesContent p {
@@ -897,15 +892,18 @@ input[type=submit]:hover {
     margin-top: 20px;
     margin-left: 315px;
     clear: both;
+    clear: both;
 }
 
 #newClothesContent img {
     float: left;
     margin-top: -100px;
+    clear: both;
 }
 
 #newClothesContent {
     position: relative;
+    clear: both;
 }
 
 #Adding-Form {
