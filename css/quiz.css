@@ -1031,7 +1031,7 @@ h3 {
 }
 
 .logotit {
-    font-family: Verdana, sans-serif;
+    font-family: 'Texturina', serif;
     letter-spacing: 4px;
     color: #FFF;
     font-size: 38px;
@@ -1044,6 +1044,7 @@ h3 {
     text-align: justify;
     font-size: 19px;
     line-height: 1.15;
+    font-family: 'Texturina', serif;
 }
 
 .fa {
