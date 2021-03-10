@@ -949,7 +949,10 @@ box-sizing: border-box;
   margin-top: 0px;
 
 }
-
+#newPLaceContent{
+  margin-top: 0px;
+  /* display: flex; */
+}
 /* new div style  */
 #newPLaceContent h4 {
   font-size: 24px;
@@ -960,13 +963,24 @@ box-sizing: border-box;
   padding-right: 542px;
   top: 10;
   bottom: 50;
+  position: relative;
+  top: 80px;
+  text-align: center;
+  text-transform: capitalize;
+
 }
 
 #newPLaceContent img {
-  float: right;
   height: 300px;
   width: 450px;
   margin-bottom: 30px;
+  filter:contrast(130%);
+  float: right;
+  position: relative;
+  bottom: 115px;
+  box-shadow: 10px 10px 10px #808080;
+
+
 
 }
 
@@ -976,7 +990,20 @@ box-sizing: border-box;
     font-family: 'Texturina','serif';
     margin-bottom: 30px;
     filter:contrast(110%);
+    height: 300px;
+    width: 50px;
 
+
+  }
+
+  .newP{
+    width: 450px;
+    position: relative;
+    top: 85px;
+    text-align: justify;
+  }
+  .newP:hover{
+color: brown;
   }
 
   .grid-container img {
@@ -992,7 +1019,8 @@ box-sizing: border-box;
     filter:contrast(110%);
 
   }
-
+.grid-container{
+}
 
   .footer{
         

@@ -1,3 +1,4 @@
+
     @import url('https://fonts.googleapis.com/css2?family=Texturina:wght@300&display=swap');
     * {
         box-sizing: border-box;
@@ -925,6 +926,7 @@ h3 {
     animation: shad-anim 15s linear infinite;
     }
 
+
 @keyframes shad-anim {
   0% {background-position: 0 0}
   0% {background-position: 100% -100%}
@@ -1106,3 +1108,7 @@ h3 {
     .fa:hover {
         opacity: 0.8;
     }
+
+
+
+
