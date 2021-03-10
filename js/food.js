@@ -183,11 +183,9 @@ function getData() {
 
     NewFoodSection.all = objDataFood;
     runderFood();
+    document.getElementById('hhhh').style.display='block';
   }
 }
-
-
-
 
 getData();
 

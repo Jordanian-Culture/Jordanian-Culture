@@ -526,7 +526,6 @@ margin: 5px;
         height: 355px;
         line-height: 1.5;
         padding: 0 24px;
-        display: none;
       }
       .box3 h3{
         font-family: 'Texturina',serif;
@@ -534,4 +533,7 @@ margin: 5px;
         text-align:center;
         padding-top:60px;
         color:#fff;
+      }
+      #hhhh {
+          display: none;
       }
